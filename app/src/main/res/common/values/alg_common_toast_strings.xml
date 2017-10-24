@@ -1,0 +1,6 @@
+<resources>
+    <!--专门服务于Toast弹出消息的字符串资源-->
+
+    <string name="ALG_NO_NETWORK">没有网络</string>
+    <string name="ALG_PROMPT_AGAIN_EXIT_APP">两秒内你敢再按一次，我立马翻脸!</string>
+</resources>

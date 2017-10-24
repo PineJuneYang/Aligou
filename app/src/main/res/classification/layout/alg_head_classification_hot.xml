@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--商品广告轮播图-->
+    <com.alg.ailigou.library.widget.banner.BannerViewPager
+        android:id="@+id/bvp_classification_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <!--新品专场-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_item_padding_top">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/alg_classification_hot_classic_view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/alg_common_text_light"
+            android:padding="5dp"
+            android:text="新品专场"
+            android:textColor="@color/alg_common_text_dark"
+            android:textSize="@dimen/alg_common_text_normal" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_new_commodity_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_text_light" />
+
+    <!--好货清单-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/alg_classification_hot_classic_view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/alg_common_text_light"
+            android:padding="5dp"
+            android:text="好货清单"
+            android:textColor="@color/alg_common_text_dark"
+            android:textSize="@dimen/alg_common_text_normal" />
+    </LinearLayout>
+
+</LinearLayout>

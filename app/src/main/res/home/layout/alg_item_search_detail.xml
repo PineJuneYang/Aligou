@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_item_search_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/alg_common_10"
+    android:layout_marginRight="@dimen/alg_common_5"
+    android:layout_marginLeft="@dimen/alg_common_5"
+    android:background="@color/alg_city_white"
+    android:orientation="vertical">
+
+
+    <com.alg.ailigou.common.widget.AutoImageView
+        android:id="@+id/iv_item_search_detail_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ratio="1"
+        android:background="@drawable/alg_debug_image_yanghe_banner_02"
+        android:scaleType="centerCrop"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_item_search_detail_goods_name"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/alg_common_sp_12"
+        android:layout_marginTop="@dimen/alg_common_8"
+        android:textColor="#3e3d3d"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="洋河系列酒"/>
+
+    <TextView
+        android:id="@+id/tv_item_search_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_10"
+        android:text="￥999.00"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:textColor="@color/alg_common_bg"
+        />
+
+
+
+
+
+</LinearLayout>

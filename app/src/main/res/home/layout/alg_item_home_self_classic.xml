@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/alg_common_3"
+    android:layout_marginRight="@dimen/alg_common_3"
+    android:layout_marginTop="@dimen/alg_common_3"
+    android:layout_marginBottom="@dimen/alg_common_3"
+    android:background="@color/alg_city_white"
+    android:orientation="vertical">
+
+    <com.alg.ailigou.common.widget.AutoImageView
+        android:id="@+id/iv_self_classic_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ratio="1"
+
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/alg_debug_image_yanghe" />
+
+
+    <TextView
+        android:id="@+id/tv_self_classic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/alg_common_6"
+        android:layout_marginRight="@dimen/alg_common_6"
+        android:layout_marginTop="@dimen/alg_common_26"
+        android:text="商品"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/alg_common_divider_color_4c"
+        android:textSize="@dimen/alg_common_sp_12" />
+
+    <TextView
+        android:id="@+id/tv_self_classic_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_6"
+        android:layout_marginRight="@dimen/alg_common_6"
+        android:layout_marginTop="@dimen/alg_common_11"
+        android:text="¥358"
+
+        android:textColor="#d70909"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

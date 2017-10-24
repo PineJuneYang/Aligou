@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/alg_common_48"
+                android:background="@color/alg_common_bg"
+                android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/tv_home_hot_sale_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/alg_home_hot_sale_list"
+        android:textColor="@color/alg_common_bg_light"
+        android:textSize="@dimen/alg_common_sp_17"/>
+
+
+
+
+</RelativeLayout>

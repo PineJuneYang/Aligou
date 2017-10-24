@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/alg_common_140"
+              android:layout_marginTop="@dimen/alg_common_5"
+              android:layout_marginRight="@dimen/alg_common_10"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/alg_common_40"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alg_cart_choose"></ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="@dimen/alg_cart_93.5"
+        android:layout_height="@dimen/alg_cart_93.5"
+        android:scaleType="center"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/alg_common_15"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goods_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:lineSpacingExtra="3sp"
+            android:text="苹果6s"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="@dimen/alg_common_sp_12" />
+
+        <TextView
+            android:id="@+id/tv_goods_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_5"
+            android:text="商品规格"
+            android:textColor="@color/alg_personal_color_5d"
+            android:textSize="@dimen/alg_common_sp_11" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/alg_common_26"
+                android:text="$99"
+                android:textColor="@color/alg_cart_price_text"
+                android:textSize="@dimen/alg_common_sp_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/alg_common_20"
+                android:background="@drawable/alg_cart_group"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_cart_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_cart_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/alg_cart_delete_black"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_goods_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="@dimen/alg_common_sp_10" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cart_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_cart_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/alg_cart_add"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext {
+    //SDK And Tools
+    compileSdkVersion = 25
+    buildToolsVersion = "26.0.0"
+    applicationId = "com.alg.ailigou"
+    minSdkVersion = 19
+    targetSdkVersion = 25
+    versionCode = 1
+    versionName = "1.0"
+    //App
+
+}

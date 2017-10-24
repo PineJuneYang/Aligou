@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用按钮亮背景色-->
+    <color name="alg_home_button_bg_light">#d69a23</color>
+     <!--独家享优惠标题-->
+    <color name="alg_home_discount_title">#0f6fc9</color>
+     <!--今日半价标题-->
+    <color name="alg_home_half_price_title">#8410be</color>
+     <!--精品推荐标题-->
+    <color name="alg_home_boutique_title">#d2390f</color>
+        
+    <color name="alg_home_d51818">#d51818</color>
+    <color name="alg_home_b9b9b9">#b9b9b9</color>
+
+
+    <color name="alg_home_414141">#414141</color>
+    <color name="alg_home_search_bg">#f4f6f9</color>
+</resources>

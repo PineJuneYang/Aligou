@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alg_personal_shape_rectangle_dc"
+              android:layout_marginLeft="@dimen/alg_common_margin"
+              android:layout_marginRight="@dimen/alg_common_margin"
+              android:layout_marginTop="@dimen/alg_common_10"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_30"
+        android:background="#e1e1e1">
+
+        <TextView
+            android:id="@+id/tv_item_offline_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:text="订单号:10005515523052"
+            android:textColor="#545454"
+            android:textSize="12sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_item_offline_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:text="2017-08-09 14:09:33"
+            android:textColor="#545454"
+            android:textSize="12sp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/alg_common_20"
+        android:paddingTop="@dimen/alg_common_10"
+        >
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="商品信息"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_name"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="微波炉"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="商品金额"
+                />
+
+            <TextView
+
+                android:id="@+id/tv_item_offline_order_price"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="￥199.00"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="数量"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_count"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="22"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_payment_way"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="线下支付"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_status"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/alg_item_personal_offline_order_ll">
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="商家账号"/>
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_account"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="P****mj"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="商家名称"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_business_name"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="某点某明"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/alg_item_personal_offline_order_ll"
+            >
+
+            <TextView
+                style="@style/alg_item_personal_offline_order_tv_left"
+                android:layout_height="wrap_content"
+                android:text="商家电话"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_offline_order_telphone"
+                style="@style/alg_item_personal_offline_order_tv_right"
+                android:layout_height="wrap_content"
+                android:text="15922222222"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

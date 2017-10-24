@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.alg.ailigou">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- 这个权限用于二维码扫描访问震动-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <application
+        android:name="com.alg.ailigou.common.base.BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/alg_common_icon_app_512"
+        android:label="@string/alg_app_name"
+        android:roundIcon="@mipmap/alg_common_icon_app_512"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:replace="android:icon, android:theme, android:label">
+        <!--百度定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2">
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fZGPY3AHr4bZvktcq6WoflwfzgbnZ5Fw"/>  <!--http://lbsyun.baidu.com/apiconsole/key-->
+        <!--友盟-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5981c82c3eae252ef5000cc8">
+        </meta-data>
+        <activity
+            android:name=".pages.main.entrance.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--***********首页***********-->
+        <!--搜索商品-->
+        <activity
+            android:name=".pages.home.searchgoods.SearchGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <!--搜索商品详情-->
+        <activity
+            android:name=".pages.home.search.SearchDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+
+        <!--二维码扫描-->
+        <activity
+            android:name=".pages.home.make.ScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--做单-->
+        <activity
+            android:name=".pages.home.make.MackActivity"
+            android:screenOrientation="portrait"/>
+        <!--做单确认-->
+        <activity
+            android:name=".pages.home.make.ConfirmActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--利购券-->
+        <activity
+            android:name=".pages.home.ligoupaper.LigouPaperActivity"
+            android:screenOrientation="portrait"/>
+        <!--自营-->
+        <activity
+            android:name=".pages.home.self.SelfActivity"
+            android:screenOrientation="portrait"/>
+        <!--新品-->
+        <activity
+            android:name=".pages.home.newgoods.NewGoodsActivity"
+            android:screenOrientation="portrait"/>
+        <!--佳酿-->
+        <activity
+            android:name=".pages.home.wine.WineActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--每周热卖-->
+        <activity
+            android:name=".pages.home.hotsaleweek.HotSaleWeekActivity"
+            android:screenOrientation="portrait"/>
+        <!--爱利购精选-->
+        <activity
+            android:name=".pages.home.algchoice.AlgChoiceActivity"
+            android:screenOrientation="portrait"/>
+        <!--奢侈品牌-->
+        <activity
+            android:name=".pages.home.luxurybrand.LuxuryBrandActivity"
+            android:screenOrientation="portrait"/>
+        <!--天天特价-->
+        <activity
+            android:name=".pages.home.everydaycheap.EveryDayCheapActivity"
+            android:screenOrientation="portrait"/>
+        <!--爆款推荐-->
+        <activity
+            android:name=".pages.home.hotrecommend.HotRecommendActivity"
+            android:screenOrientation="portrait"/>
+        <!--利购券兑换详情-->
+        <activity
+            android:name=".pages.home.ligouchangedetails.LigouChangeDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--利购券兑换记录-->
+        <activity
+            android:name=".pages.home.ligouchangenotes.LigouChangeNotesActivity"
+            android:screenOrientation="portrait"/>
+        <!--利购券余额-->
+        <activity
+            android:name=".pages.home.ligouoverage.LigouOverageActivity"
+            android:screenOrientation="portrait"/>
+        <!--城市选择-->
+        <activity
+            android:name=".selectcity.CitySelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <!--***********分类***********-->
+        <!--***********新闻***********-->
+        <activity
+            android:name=".pages.news.entrance.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <!--热销榜-->
+        <activity
+            android:name=".pages.home.hotsalelist.HotSaleListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--***********购物车***********-->
+        <activity
+            android:name=".pages.cart.newpush.NewGoodsPushActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--***********我的***********-->
+        <!--设置-->
+        <activity
+            android:name=".pages.personal.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <!--添加银行卡-->
+        <activity
+            android:name=".pages.personal.addbankcard.AddBankCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--银行卡修改-->
+        <activity
+            android:name=".pages.personal.addbankcardinfo.AddBankCardInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--关于爱利购-->
+        <activity
+            android:name=".pages.personal.aboutaligo.AboutAligoActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--修改登录密码-->
+        <activity
+            android:name=".pages.personal.modifyloginpassword.ModifyLoginPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <!--重置登录密码-->
+        <activity
+            android:name=".pages.personal.resetloginpassword.ResetLoginPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <!--账户与安全-->
+        <activity
+            android:launchMode="singleTask"
+            android:name=".pages.personal.accountandsecurity.AccountSecurityActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--验证新手机号码-->
+        <activity
+            android:name=".pages.personal.verifynewphonenumber.VerifyNewPhoneNumberActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--我的资料-->
+        <activity
+            android:name=".pages.personal.myinfo.MyInfoActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的二维码-->
+        <activity
+            android:name=".pages.personal.myqrcode.MyQRcodeActivity"
+            android:screenOrientation="portrait"/>
+        <!--利购券详情界面-->
+        <activity
+            android:name=".pages.personal.ligoudetails.LigouDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--登录界面-->
+        <activity
+            android:launchMode="singleTask"
+            android:name=".pages.personal.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--注册界面-->
+        <activity
+            android:name=".pages.personal.register.RegisterActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--注册里面的设置登录密码界面-->
+        <activity
+            android:name=".pages.personal.register.RegisterSettingLoginPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--我的收藏-->
+        <activity
+            android:name=".pages.personal.mycollection.MyCollectionActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的足迹-->
+        <activity
+            android:name=".pages.personal.myfoot.MyFootNotesActivity"
+            android:screenOrientation="portrait"/>
+        <!--查看物流信息-->
+        <activity
+            android:name=".pages.personal.seelogistics.SeeLogisticsActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的订单-->
+        <activity
+            android:name=".pages.personal.myorder.MyOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--订单详情-->
+        <activity
+            android:name=".pages.personal.commonorderdetails.CommonOrderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--评价详情-->
+        <activity
+            android:name=".pages.personal.commentdetail.CommentDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--评价详情里面图片点击之后跳转到的展示图片界面-->
+        <activity
+            android:name=".pages.personal.commentdetail.PhotoDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--编辑收货地址-->
+        <activity
+            android:name=".pages.personal.editaddress.EditAddressActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--新增地址-->
+        <activity
+            android:name=".pages.personal.addaddress.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--意见反馈-->
+        <activity
+            android:name=".pages.personal.feedback.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <!--通用的webview-->
+        <activity
+            android:name=".pages.personal.commonwebview.CommonWebviewActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--查询线上订单-->
+        <activity
+            android:name=".pages.personal.onlineorder.OnLineOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--查询线下订单-->
+        <activity
+            android:name=".pages.personal.offlineorder.OffLineOrderActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的账单-->
+        <activity
+            android:name=".pages.personal.mybill.MyBillActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--收货地址-->
+        <activity
+            android:name=".pages.personal.receiveaddress.ReceiveAddressActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--退款详情-->
+        <activity
+            android:name=".pages.personal.returngoodsdetails.ReturnGoodsDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--付款-->
+        <activity
+            android:name=".pages.personal.paylist.PayListActivity"
+            android:screenOrientation="portrait"/>
+        <!--退款原因-->
+        <activity
+            android:name=".pages.personal.applyreturnmoney.ApplyReturnMoneyActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--退款/售后-->
+        <activity
+            android:name=".pages.personal.refundsoraftersale.RefundsOrAfterSaleActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--退款详情-->
+        <activity
+            android:name=".pages.personal.refundsdetail.RefundsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!--提现-->
+        <activity
+            android:name=".pages.personal.withdraw.WthdrawActivity"
+            android:screenOrientation="portrait"/>
+        <!--修改手机号-->
+        <activity
+            android:name=".pages.personal.modifyphonenumber.ModifyPhoneNumberActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--资金变更记录-->
+        <activity
+            android:name=".pages.personal.moneychange.MoneyChangeActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--签到-->
+        <activity
+            android:name=".pages.personal.signin.SignInActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--会员等级-->
+        <activity android:name=".pages.personal.memberlevel.MemeberLevelActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--***********商城***********-->
+        <!--商城-->
+        <activity
+            android:name=".pages.mall.entrance.MallActivity"
+            android:screenOrientation="portrait"/>
+        <!--商品详情-->
+        <activity
+            android:name=".pages.mall.details.CommodityDetailsActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--某品牌-->
+        <activity
+            android:name=".pages.mall.brand.BrandActivity"
+            android:screenOrientation="portrait"/>
+        <!--限时特购-->
+        <activity
+            android:name=".pages.mall.limit.LimitActivity"
+            android:screenOrientation="portrait"/>
+        <!--支付-->
+        <activity
+            android:name=".pages.mall.pay.PayActivity"
+            android:screenOrientation="portrait"/>
+        <!--在线咨询-->
+        <activity
+            android:name=".pages.mall.advice.AdviceActivity"
+            android:screenOrientation="portrait"/>
+        <!--每周上新-->
+        <activity
+            android:name=".pages.mall.weeknew.WeekNewActivity"
+            android:screenOrientation="portrait"/>
+        <!--订单详情-->
+        <activity
+            android:name=".pages.mall.orderdetails.OrderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--商品评论-->
+        <activity
+            android:name=".pages.mall.comment.CommentActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--***********商家联盟***********-->
+        <!-- 商家详情-->
+        <activity
+            android:name=".pages.union.uniondetail.UnionDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <!--联盟商家-->
+        <activity
+            android:name=".pages.union.entrance.UnionActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 商家搜索-->
+        <activity
+            android:name=".pages.union.unionsearch.UnionSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <!--佳酿里的商品列表-->
+        <activity
+            android:name=".pages.home.goodslist.GoodsListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <!--++++++++++++++++++++++++++++++++++-友盟分享++++++++++++++++++++++++++++++++++++++++++-->
+        <!--新浪微博-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <!--QQ-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 微信-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+    <!--7.0选择相册是必须使用-->
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="applicationId.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/alg_file_paths"/>
+    </provider>
+</manifest>

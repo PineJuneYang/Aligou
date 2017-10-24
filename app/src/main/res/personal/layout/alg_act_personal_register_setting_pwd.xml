@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <TextView
+        android:id="@+id/tv_register_setting_pwd_phone_number"
+        style="@style/alg_personal_register_desc_tv"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginTop="@dimen/alg_common_50"
+        android:text="验证短信已发送至"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_12"
+        android:background="@color/alg_common_bg_light">
+
+        <TextView
+            android:id="@+id/tv_register_setting_pwd_verification_code"
+            style="@style/alg_personal_setting_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:text="验证码"
+            />
+
+        <EditText
+            android:id="@+id/et_register_setting_pwd_input_sms"
+            style="@style/alg_personal_register_common_edit"
+            android:layout_marginRight="@dimen/alg_common_40"
+            android:inputType="number"
+            android:layout_toLeftOf="@+id/tv_register_setting_pwd_get_verification_code"
+            android:layout_toRightOf="@id/tv_register_setting_pwd_verification_code"
+            android:hint="请输入短信验证码"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_register_setting_pwd_get_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alg_common_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/alg_common_6"
+            android:paddingRight="@dimen/alg_common_6"
+            android:text="获取验证码"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:background="@color/alg_common_bg_light">
+
+        <TextView
+            android:id="@+id/tv_register_setting_pwd_new"
+            style="@style/alg_personal_setting_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="设置密码"
+
+            />
+
+
+        <EditText
+            android:id="@+id/et_register_setting_pwd_input_new"
+            style="@style/alg_personal_register_common_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:layout_marginRight="@dimen/alg_common_20"
+            android:layout_toLeftOf="@+id/iv_register_setting_pwd_eyes"
+            android:layout_toRightOf="@id/tv_register_setting_pwd_new"
+            android:hint="请输入6～15位的新密码"
+            android:inputType="textPassword"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_register_setting_pwd_eyes"
+            style="@style/alg_personal_common_eye_iv"
+            android:background="@drawable/alg_personal_modify_psw_look_psw"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_5"
+        android:background="@color/alg_common_bg_light">
+
+        <TextView
+            android:id="@+id/tv_register_setting_pwd_sure_new"
+            style="@style/alg_personal_setting_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="确定密码"></TextView>
+
+
+        <EditText
+            android:id="@+id/et_register_setting_pwd_sure_new"
+            style="@style/alg_personal_register_common_edit"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:layout_toLeftOf="@+id/iv_register_setting_pwd_sure_eyes"
+            android:layout_toRightOf="@id/tv_register_setting_pwd_sure_new"
+            android:hint="请输入6～15位的新密码"
+            android:inputType="textPassword"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_register_setting_pwd_sure_eyes"
+            style="@style/alg_personal_common_eye_iv"
+            android:background="@drawable/alg_personal_modify_psw_look_psw"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/alg_personal_register_desc_tv"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="注册即视为同意 "
+            />
+
+        <TextView
+            android:id="@+id/tv_register_setting_pwd_alg_protocol"
+            style="@style/alg_personal_setting_text"
+            android:layout_marginLeft="@dimen/alg_common_4"
+            android:text="爱利购服务协议"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_register_setting_pwd_register"
+        style="@style/alg_personal_common_next_tv"
+        android:layout_marginTop="@dimen/alg_common_80"
+        android:text="注册"
+        />
+</LinearLayout>

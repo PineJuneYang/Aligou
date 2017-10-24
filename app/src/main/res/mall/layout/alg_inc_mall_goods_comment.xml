@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/alg_common_20"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_mall_goods_details_comment_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableRight="@mipmap/alg_common_icon_arrow_right"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:layout_marginRight="@dimen/alg_common_8"
+        android:text="商品评价(120)"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/alg_common_19"
+        android:background="#e9e9e9"/>
+    <!--商品评价标签-->
+    <com.alg.ailigou.pages.home.widget.YhFlowLayout
+        android:id="@+id/flow_mall_goods_details_comment_lables"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_20"
+        />
+
+
+
+
+    <!--商品评价列表-->
+    <com.alg.ailigou.common.widget.CustomRecyclerView
+        android:id="@+id/rv_mall_goods_details_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_27"
+        />
+    <!--查看全部评价-->
+    <TextView
+        android:id="@+id/tv_mall_goods_details_view_all_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/alg_common_shape_rectangle_red"
+        android:paddingLeft="@dimen/alg_common_27"
+        android:paddingRight="@dimen/alg_common_27"
+        android:textColor="@color/alg_common_color_red"
+        android:paddingTop="@dimen/alg_common_6"
+        android:paddingBottom="@dimen/alg_common_6"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/alg_common_28"
+        android:text="查看全部评价"/>
+
+</LinearLayout>

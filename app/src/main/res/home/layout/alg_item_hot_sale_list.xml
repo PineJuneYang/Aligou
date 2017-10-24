@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_item_hot_sale_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/alg_common_8"
+    >
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_item_hot_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/alg_common_30"
+
+        android:src="@drawable/alg_home_icon_hottitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:layout_marginRight="@dimen/alg_common_8"
+        android:background="@drawable/alg_home_icon_relative_bg"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_hot_sale_icon"
+            android:layout_width="@dimen/alg_common_94"
+            android:layout_height="@dimen/alg_common_94"
+            android:layout_marginLeft="@dimen/alg_common_14"
+            android:layout_marginTop="@dimen/alg_common_24"
+            android:layout_marginBottom="@dimen/alg_common_18"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_hot_sale_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:textColor="@color/alg_common_bg_dark"
+            android:layout_marginTop="@dimen/alg_common_16"
+            android:layout_toRightOf="@id/iv_item_hot_sale_icon"
+            android:text="@string/alg_home_hot_sale_good_name"
+            android:textSize="@dimen/alg_common_sp_13" />
+
+        <TextView
+            android:id="@+id/tv_item_hot_sale_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_item_hot_sale_name"
+            android:text="@string/alg_home_hot_sale_good_desc"
+            android:textSize="@dimen/alg_common_sp_10"
+            android:layout_below="@+id/tv_item_hot_sale_name" />
+
+        <TextView
+            android:id="@+id/tv_item_hot_sale_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_item_hot_sale_icon"
+            android:layout_alignBottom="@id/iv_item_hot_sale_icon"
+            android:text="@string/alg_home_hot_sale_good_now_price"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/alg_common_9"
+            android:layout_marginBottom="@dimen/alg_common_2"
+            android:textColor="#eb3b32"
+            android:textSize="@dimen/alg_common_sp_16" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_item_hot_sale_now_price"
+
+            android:layout_marginTop="@dimen/alg_common_2"
+            android:layout_toLeftOf="@+id/tv_item_hot_sale_save"
+            android:layout_marginRight="@dimen/alg_common_15"
+            >
+
+        <TextView
+            android:id="@+id/tv_item_hot_sale_pre_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/alg_home_hot_sale_good_pre_price"
+            android:textColor="#d0d0d0"
+            android:textSize="@dimen/alg_common_sp_13" />
+
+            <View
+                android:layout_width="@dimen/alg_common_50"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:background="#b5b5b5"/>
+
+        </RelativeLayout>
+        
+
+        <TextView
+            android:id="@+id/tv_item_hot_sale_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/alg_home_hot_sale_save"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@id/iv_item_hot_sale_icon"
+            android:layout_marginRight="@dimen/alg_common_16"
+            android:layout_marginBottom="@dimen/alg_common_4"
+            android:background="@drawable/alg_home_icon_btn_bg"
+            android:paddingLeft="@dimen/alg_common_10"
+            android:paddingRight="@dimen/alg_common_10"
+            android:paddingTop="@dimen/alg_common_6"
+            android:paddingBottom="@dimen/alg_common_6"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

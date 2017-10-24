@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_item_goods_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/alg_common_item_padding_top"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_home_goods_list_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/alg_debug_image_yanghe"/>
+
+    <TextView
+        android:id="@+id/tv_home_goods_list_title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_item_padding_top"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/alg_common_text_dark"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="商品名称简写"/>
+</LinearLayout>

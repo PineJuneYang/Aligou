@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            keyAlias 'ailigou'
+            keyPassword '1q2w3e4r!@'
+            storeFile file('../ailigou.jks')
+            storePassword '1q2w3e4r!@'
+        }
+        config {
+            keyAlias 'ailigou'
+            keyPassword '1q2w3e4r!@'
+            storeFile file('./ailigou.keystore')
+            storePassword '1q2w3e4r!@'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/debug',
+                    'src/main/res/common',
+                    'src/main/res/widget',
+                    'src/main/res/main',
+                    'src/main/res/start',
+                    'src/main/res/home',
+                    'src/main/res/classification',
+                    'src/main/res/supper',
+                    'src/main/res/news',
+                    'src/main/res/cart',
+                    'src/main/res/personal',
+                    'src/main/res/mall',
+                    'src/main/res/union',
+                    'src/main/res/city'
+            ]
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs+='src/main/kotlin'
+            //resourcePrefix "alg_"
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //日志管理库
+    compile 'com.orhanobut:logger:1.15'
+    //v7
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    //Dagger2库
+    provided 'javax.annotation:javax.annotation-api:1.2'
+    compile 'com.google.dagger:dagger:2.0.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0.2'
+    //依赖注入库
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //动态权限
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+    //网络通讯库
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //Rx库
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.0'
+    //事件总线库
+    compile 'com.hwangjr.rxbus:rxbus:1.0.5'
+    //gson
+    compile 'com.google.code.gson:gson:2.8.0'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.android.support:design:25.0.0'
+    //圆形头像库
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    // 角标
+    compile 'q.rorbin:badgeview:1.1.0'
+    // 下拉刷新 上拉加载更多
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    //评分控件
+    compile 'com.hedgehog.ratingbar:app:1.1.2'
+    //复杂布局的vlayout
+    compile('com.alibaba.android:vlayout:1.0.9@aar') {
+        transitive = true
+    }
+    compile files('libs/BaiduLBS_Android.jar')
+    //二维码扫描库
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    //WebSocket
+    compile 'org.java-websocket:Java-WebSocket:1.3.4'
+    compile project(':ptr-lib')
+    //时间选择器
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/open_sdk_r5788_lite.jar')
+    //PhotoView 图片浏览缩放控件
+    compile 'com.bm.photoview:library:1.4.1'
+}

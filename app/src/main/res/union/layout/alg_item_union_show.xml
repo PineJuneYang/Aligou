@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/alg_common_5"
+    android:layout_marginRight="@dimen/alg_common_5"
+    android:layout_marginTop="@dimen/alg_common_12"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_unicon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_200" />
+
+</LinearLayout>

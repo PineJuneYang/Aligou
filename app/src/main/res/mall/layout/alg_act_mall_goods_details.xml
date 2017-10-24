@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/xrv_mall_commodity_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+    <com.alg.ailigou.common.widget.CustomScrollView
+        android:id="@+id/sv_mall_goods_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_above="@+id/tb_mall_goods_details_tab_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--商品信息-->
+            <include
+                layout="@layout/alg_inc_mall_goods_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--分组标记 评论-->
+            <ImageView
+                android:id="@+id/iv_mall_goods_details_group_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:src="@drawable/alg_common_evaluate"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                 />
+            <!--评论-->
+            <include
+                layout="@layout/alg_inc_mall_goods_comment"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                />
+
+            <!--分组标记 详情-->
+
+
+            <ImageView
+                android:id="@+id/iv_mall_goods_details_group_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/alg_common_34"
+                android:src="@drawable/alg_common_icon_details"
+                />
+
+            <!--商品详情-->
+            <include
+                layout="@layout/alg_inc_mall_goods_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--分组标记 推荐-->
+            <ImageView
+                android:id="@+id/iv_mall_goods_details_group_recomment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/alg_common_26"
+                android:src="@drawable/alg_common_icon_youlike"
+                />
+
+
+
+            <!--推荐-->
+            <include
+                layout="@layout/alg_inc_mall_goods_recomment"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </com.alg.ailigou.common.widget.CustomScrollView>
+    <!--浮在顶部的工具条-->
+    <include
+        android:id="@+id/tb_mall_goods_details_toolbar"
+        layout="@layout/alg_inc_mall_details_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--浮在底部的工具条-->
+    <include
+        android:id="@+id/tb_mall_goods_details_tab_bar"
+        layout="@layout/alg_inc_mall_details_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="alg_">AiligouApp</string>
+    <string name="alg_home_cheap_ticket_overage">利购券余额</string>
+    <string name="alg_home_exchange_notes">兑换记录</string>
+    <string name="alg_home_exchange_goods">兑换产品</string>
+    <string name="alg_home_exchange_now">立即兑换</string>
+    <string name="alg_home_big_name">大牌专场</string>
+    <string name="alg_home_hot_sale_list">热销榜</string>
+    <string name="alg_home_hot_sale_good">热门商品一</string>
+    <string name="alg_home_hot_sale_good_name">商品名称</string>
+    <string name="alg_home_hot_sale_good_desc">文案</string>
+    <string name="alg_home_hot_sale_good_now_price">现价</string>
+    <string name="alg_home_hot_sale_good_pre_price">原价</string>
+    <string name="alg_home_hot_sale_save">立省? 元</string>
+</resources>

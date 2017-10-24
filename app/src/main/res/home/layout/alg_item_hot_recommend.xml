@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alg_common_purple"
+    android:paddingBottom="@dimen/alg_common_10"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_home_recommend_creazy_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_home_crazyshoppingforexplosion"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_left_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/alg_common_8"
+            android:paddingRight="@dimen/alg_common_6"
+            android:paddingTop="@dimen/alg_common_40">
+
+            <ImageView
+                android:id="@+id/iv_goods1"
+
+                style="@style/alg_home_alg_hot_recommend_img" />
+
+            <TextView
+                android:id="@+id/tv_goods_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:lines="1"
+                android:maxLines="2"
+                android:text="洋河"
+                android:textColor="@color/alg_common_bg_dark"
+                android:textSize="@dimen/alg_common_sp_12" />
+
+            <TextView
+                android:id="@+id/tv_goods_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_18"
+                android:text="199"
+                android:textColor="#f32f1b"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_right_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/alg_common_6"
+            android:paddingRight="@dimen/alg_common_8"
+            android:paddingTop="@dimen/alg_common_40">
+
+            <ImageView
+                android:id="@+id/iv_goods2"
+                style="@style/alg_home_alg_hot_recommend_img" />
+
+            <TextView
+                android:id="@+id/tv_goods_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:lines="1"
+                android:maxLines="2"
+                android:text="杏花村"
+                android:textColor="@color/alg_common_bg_dark"
+                android:textSize="@dimen/alg_common_sp_12" />
+
+            <TextView
+                android:id="@+id/tv_goods_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_18"
+                android:text="199"
+                android:textColor="#f32f1b"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

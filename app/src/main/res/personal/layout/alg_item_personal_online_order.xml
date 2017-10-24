@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alg_personal_shape_rectangle_dc"
+              android:layout_marginLeft="@dimen/alg_common_8"
+              android:layout_marginRight="@dimen/alg_common_8"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_30"
+        android:background="#e1e1e1">
+
+        <TextView
+            android:id="@+id/tv_item_online_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:text="订单号:10005515523052"
+            android:textSize="12sp"
+            android:textColor="#545454"
+
+            />
+
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#545454"
+            android:id="@+id/tv_item_online_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:text="2017-08-09 14:09:33"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/alg_common_13"
+        android:paddingLeft="@dimen/alg_common_13"
+        android:paddingBottom="@dimen/alg_common_13"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_online_order_icon"
+            android:layout_width="@dimen/alg_common_64"
+            android:layout_height="@dimen/alg_common_64"
+            android:src="@mipmap/alg_main_icon_tab_function_news_normal"/>
+
+
+        <TextView
+            android:paddingLeft="@dimen/alg_common_35"
+            android:id="@+id/tv_item_online_order_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="#545454"
+            android:text="￥108.50"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_online_order_status"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:textColor="#545454"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="代付款"
+            />
+
+        <TextView
+            android:id="@+id/tv_online_order_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/alg_common_22"
+            android:text="@string/alg_personal_look"
+            android:textSize="12sp"
+            android:textColor="#0b42e0"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

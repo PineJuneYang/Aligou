@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alg_news_title">爱利购资讯</string>
+    <string name="alg_news_alg_moving">爱利购动态</string>
+    <string name="alg_news_industry_moving">行业动态</string>
+    <string name="alg_news_new_release">新品发布</string>
+    <string name="alg_news_hot_news">热门资讯</string>
+</resources>

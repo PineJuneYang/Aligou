@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_margin="@dimen/alg_common_5"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+    <!-- 这个是推荐的单个商品条目-->
+    <ImageView
+        android:id="@+id/iv_goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/alg_logo" />
+
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/tv_goods_desc"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_4"
+        android:layout_height="wrap_content"
+        android:text="三星s7"
+        android:lines="2"
+        android:layout_marginTop="@dimen/alg_common_26"
+        android:textColor="@color/alg_common_bg_dark"
+        android:textSize="@dimen/alg_common_sp_12" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_4"
+        android:layout_marginTop="@dimen/alg_common_8"
+        android:text="$999"
+        android:textColor="#f32f1b"
+        android:textSize="14sp" />
+</LinearLayout>

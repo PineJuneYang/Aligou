@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/alg_common_120"
+                android:layout_height="@dimen/alg_common_120"
+    >
+
+
+    <com.bm.library.PhotoView
+        android:id="@+id/iv_item_comment_detail_photo"
+        android:layout_width="@dimen/alg_common_100"
+        android:layout_height="@dimen/alg_common_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alg_common_15"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/iv_item_comment_detail_delete_photo"
+        android:layout_width="@dimen/alg_common_15"
+        android:layout_height="@dimen/alg_common_15"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/alg_common_10"
+        android:layout_marginTop="@dimen/alg_common_10"
+        android:src="@drawable/alg_logo"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主界面底部tab文字大小-->
+    <dimen name="alg_main_tab_title_size">10sp</dimen>
+    <!--主界面底部tab控件上边距-->
+    <dimen name="alg_main_tab_padding_top">8dp</dimen>
+
+</resources>

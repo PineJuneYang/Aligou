@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--商品分类列表未选择背景色-->
+    <color name="alg_classification_commodity_type_bg_normal">#ffffff</color>
+    <!--商品分类列表已选择背景色-->
+    <color name="alg_classification_commodity_type_bg_selected">#ededed</color>
+    <!--精品推荐分类标题指示条色-->
+    <color name="alg_classification_hot_classic_view_bg">#bc490b</color>
+
+</resources>

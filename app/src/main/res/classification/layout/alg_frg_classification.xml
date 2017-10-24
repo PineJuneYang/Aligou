@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#df5718"
+              android:orientation="vertical">
+    <!--顶部搜索条-->
+    <include
+        layout="@layout/alg_inc_classification_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alg_classification_commodity_type_bg_selected">
+        <!--左侧类别-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_classic_type_list"
+            android:layout_width="0dp"
+            android:background="@color/alg_common_bg_light"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!--右侧展示-->
+        <FrameLayout
+            android:id="@+id/fl_commodity_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/alg_common_item_padding_top"
+            android:layout_weight="4"
+            android:background="@color/alg_common_text_light"/>
+
+    </LinearLayout>
+</LinearLayout>

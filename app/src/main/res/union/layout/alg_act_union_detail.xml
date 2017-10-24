@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dl_root"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:layout_marginRight="@dimen/alg_common_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@mipmap/alg_home_image_business_item_bg"
+                    app:layout_scrollFlags="scroll">
+
+                    <ImageView
+                        android:id="@+id/iv_unicon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_common_175"
+                        android:src="@drawable/alg_home_recommend_banner"
+
+                        android:scaleType="center"/>
+
+                    <TextView
+                        android:id="@+id/tv_unicon_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/alg_common_5"
+                        android:textColor="#000000"
+                        android:text="海航集团"/>
+
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/alg_common_30"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/alg_common_bg_dark"
+                    app:tabMinWidth="@dimen/alg_common_2"
+                    app:tabSelectedTextColor="@color/alg_common_bg_dark"
+                    app:tabTextColor="@color/alg_common_bg_dark"></android.support.design.widget.TabLayout>
+
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_personal_refunds_count_down"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+           android:paddingLeft="@dimen/alg_common_35"
+            android:layout_height="wrap_content"
+            android:text="你已成功发起退款申请,请耐心等待商家处理!"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/alg_common_35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_15"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间:"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_8"
+                android:text="0天0时0分"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:layout_marginTop="@dimen/alg_common_8"
+        android:text="退款信息"
+        android:textColor="#7c7c7c"
+        android:textSize="13sp"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_130"
+        android:paddingBottom="@dimen/alg_common_18"
+        android:paddingTop="@dimen/alg_common_18"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_refunds_detail_icon"
+            android:layout_width="@dimen/alg_cart_93.5"
+            android:layout_height="@dimen/alg_cart_93.5"
+            android:layout_marginLeft="@dimen/alg_common_10"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_detail_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_toRightOf="@id/iv_refunds_detail_icon"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/iv_refunds_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_toRightOf="@id/iv_refunds_detail_icon"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="-5sp"
+            android:text="¥0"
+            android:textColor="#ee3929"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_detail_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_refunds_detail_brand"
+            android:layout_marginBottom="@dimen/alg_common_10"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:layout_toRightOf="@id/iv_refunds_detail_icon"
+            android:text=""
+            android:textColor="#7c7c7c"
+            android:textSize="13sp"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_8"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text="退款编号:"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_refunds_detail_refunds_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text=""
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_12"
+                android:text="申请时间:"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_refunds_detail_refunds_apply_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text=""
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text="退款金额:"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_refunds_detail_refunds_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text="￥0"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alg_common_15"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text="退款原因:"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_refunds_detail_refunds_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                android:text=""
+                android:textColor="#7c7c7c"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alg_common_divider_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:layout_marginRight="@dimen/alg_common_5"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_refunds_detail_modity_apply"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alg_common_25"
+            android:gravity="center"
+            android:textColor="@color/alg_common_bg_dark"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/alg_common_5"
+            android:layout_marginRight="@dimen/alg_common_5"
+            android:layout_weight="1"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:text="修改申请"
+            android:textSize="@dimen/alg_common_sp_13"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_detail_online_consult"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alg_common_25"
+            android:gravity="center"
+            android:textColor="@color/alg_common_bg_dark"
+            android:layout_marginLeft="@dimen/alg_common_5"
+            android:layout_marginRight="@dimen/alg_common_5"
+            android:layout_weight="1"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:text="在线咨询"
+            android:textSize="@dimen/alg_common_sp_13"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alg_common_25"
+            android:gravity="center"
+            android:textColor="#fd0000"
+            android:layout_toLeftOf="@id/tv_refunds_detail_modity_apply"
+            android:layout_weight="1"
+            android:background="@drawable/alg_personal_refefunds_red_bg"
+            android:text="撤销申请"
+            android:layout_marginLeft="@dimen/alg_common_5"
+            android:layout_marginRight="@dimen/alg_common_5"
+            android:textSize="@dimen/alg_common_sp_13"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginTop="@dimen/alg_common_30"
+        android:text="注: 1.商家同意或系统超时未处理,系统将退款给您."
+        android:textColor="#7c7c7c"
+        android:textSize="10sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_28"
+        android:layout_marginTop="@dimen/alg_common_10"
+        android:text="2.如果商家拒绝,您可以修改退款申请后再次发起,商家会重新处理."
+        android:textColor="#7c7c7c"
+        android:textSize="@dimen/alg_common_sp_10"
+
+        />
+
+</LinearLayout>

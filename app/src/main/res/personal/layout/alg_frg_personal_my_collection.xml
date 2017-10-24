@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.RefreshFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="500"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">>
+
+
+    <include
+        layout="@layout/alg_inc_common_empty"
+   ></include>    </in.srain.cube.views.ptr.RefreshFrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_collection_fragment_all_choose_delete"
+        android:layout_width="match_parent"
+        android:background="@color/alg_city_white"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/alg_common_48">
+
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alg_cart_all_choose"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_select"
+
+            android:text="全选"
+            android:textColor="@color/alg_common_bg_dark"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_8"
+
+            />
+        <TextView
+            android:id="@+id/tv_my_collection_fragment_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:textSize="17sp"
+            android:text="删除"
+            android:textColor="@color/alg_city_white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/alg_common_31"
+            android:paddingRight="@dimen/alg_common_31"
+            android:background="@drawable/alg_cart_delete_bg"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+<LinearLayout
+    android:id="@+id/ll_receive_address_empty"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/alg_news_85"
+        android:layout_height="@dimen/alg_news_85"
+        android:src="@drawable/alg_personal_icon_mylist"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你还没有添加任何地址,快去添加吧!"
+        android:layout_marginTop="@dimen/alg_common_15"
+
+        />
+
+
+
+</LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_receive_address_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_receive_address_new_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_40"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:text="新增地址"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alg_personal_comment_btn"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

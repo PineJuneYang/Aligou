@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/alg_common_bg_light"
+              android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_40"
+        android:text="退款原因"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_200"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_marginTop="@dimen/alg_common_40"
+        android:text="取消"
+        android:gravity="center"
+        android:textColor="@color/alg_common_bg_light"
+        android:background="@color/alg_common_bg_gray"
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_40"/>
+</LinearLayout>

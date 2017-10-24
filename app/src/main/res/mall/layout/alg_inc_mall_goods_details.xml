@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/alg_common_27"
+              android:layout_height="match_parent">
+
+    <!--详情页 网页-->
+    <com.alg.ailigou.common.widget.CustomWebView
+        android:id="@+id/web_mall_goods_details_info"
+        android:layout_marginTop="@dimen/alg_common_27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

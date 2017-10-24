@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/alg_inc_common_title"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alg_common_divider_hint_ef"
+        />
+
+
+    <com.alg.ailigou.common.widget.CustomScrollView
+        android:id="@+id/sv_mall_goods_details_comment_all_container"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/alg_common_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mall_goods_details_comment_all_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:textColor="#4f4f4f"
+                    android:padding="@dimen/alg_common_item_padding_top"
+                    android:text="商品评价(120)"/>
+
+                <TextView
+                    android:id="@+id/tv_mall_goods_details_comment_all_good_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/alg_common_8"
+                    android:textSize="12sp"
+                    android:textColor="#4f4f4f"
+                    android:padding="@dimen/alg_common_item_padding_top"
+                    android:text="好评率(120)"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alg_common_divider_hint_e9"
+                android:layout_marginTop="@dimen/alg_common_19"
+                />
+
+            <!--商品评价标签-->
+            <com.alg.ailigou.pages.home.widget.YhFlowLayout
+                android:id="@+id/flow_mall_goods_details_comment_all_lables"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:layout_marginLeft="@dimen/alg_common_8"
+                android:layout_marginRight="@dimen/alg_common_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alg_common_divider_hint_e9"
+                android:layout_marginTop="@dimen/alg_common_29"
+                />
+
+            <!--商品评价列表-->
+            <com.alg.ailigou.common.widget.CustomRecyclerView
+                android:id="@+id/rv_mall_goods_details_comment_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.alg.ailigou.common.widget.CustomScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/alg_common_345"
+                android:background="@drawable/alg_home_wine_bannerbg"
+
+    >
+
+<ImageView
+    android:id="@+id/iv_home_wine_hot_sale"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/alg_home_wine_hot"
+    android:layout_marginTop="@dimen/alg_common_16"
+    android:layout_marginLeft="@dimen/alg_common_30"
+    android:scaleType="centerCrop"
+    />
+
+
+    <TextView
+        android:id="@+id/tv_home_wine_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_home_wine_price"
+        android:layout_alignBottom="@id/iv_home_wine_hot_sale"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/alg_common_24"
+        android:text="价格:￥20"
+        android:gravity="center"
+        android:textSize="@dimen/alg_common_sp_13"
+        android:textColor="@color/alg_common_bg_dark"
+        />
+
+    <com.alg.ailigou.library.widget.banner.BannerViewPager
+        android:id="@+id/bannerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_180"
+        android:layout_marginTop="@dimen/alg_common_50"
+        android:layout_centerHorizontal="true"
+        ></com.alg.ailigou.library.widget.banner.BannerViewPager>
+
+
+    <ImageView
+        android:id="@+id/iv_home_wine_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alg_home_detil_btn"
+        android:layout_below="@id/bannerview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alg_common_34"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_home_wine_banner_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/alg_common_sp_13"
+        android:textColor="#000000"
+        android:text="法国窖藏红葡萄酒 500ml 法国庄园唯一专供  ¥450 限量供"
+        android:layout_below="@id/iv_home_wine_detail"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:layout_marginRight="@dimen/alg_common_8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/alg_common_16"
+        />
+
+</RelativeLayout>

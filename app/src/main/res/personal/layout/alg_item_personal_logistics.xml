@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/alg_common_70"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/alg_common_divider_width"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_line_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_20"
+                    android:background="#efefef"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#efefef"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:background="@drawable/alg_personal_logistcs_no_select"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_logistics_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="快件已签收"
+                android:textColor="#7c7c7c"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_logistics_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/alg_common_20"
+                android:layout_marginTop="@dimen/alg_common_15"
+                android:text="2017年8月8日"
+                android:textColor="#7c7c7c"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/alg_common_35"
+        android:background="@color/alg_common_divider_color"/>
+</LinearLayout>

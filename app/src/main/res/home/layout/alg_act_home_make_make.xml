@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--商户-->
+    <TextView
+        android:id="@+id/tv_home_make_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商户id"/>
+    <!--消费者-->
+    <TextView
+        android:id="@+id/tv_home_make_consumer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消费者id"/>
+    <!--账单信息-->
+    <TextView
+        android:id="@+id/tv_home_make_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账单信息"/>
+    <!--提交确认-->
+    <TextView
+        android:id="@+id/tv_home_make_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_common_shape_button_bg_normal"
+        android:padding="@dimen/alg_common_item_padding_top"
+        android:text="提交确认"
+        android:textColor="@color/alg_common_text_light"/>
+
+</LinearLayout>

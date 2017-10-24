@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+
+              android:layout_marginRight="@dimen/alg_common_15"
+              android:layout_marginTop="@dimen/alg_common_7"
+
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+    <!-- 利购券商城的item -->
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="@dimen/alg_common_74"
+        android:layout_height="@dimen/alg_common_74"
+        android:layout_marginLeft="@dimen/alg_common_14"
+        android:layout_marginTop="@dimen/alg_common_16"
+        android:layout_marginBottom="@dimen/alg_common_12"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/alg_common_25"
+        android:layout_marginTop="@dimen/alg_common_11"
+        android:layout_marginRight="@dimen/alg_common_12"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_12"
+            android:text="价格"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alg_common_8">
+
+
+            <TextView
+                android:id="@+id/tv_cheap_ticket_count"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="38" />
+
+            <TextView
+                android:id="@+id/tv_exchange_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alg_home_redbtn"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/alg_common_25"
+                android:text="@string/alg_home_exchange_now" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

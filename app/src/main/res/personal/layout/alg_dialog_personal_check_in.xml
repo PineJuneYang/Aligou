@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alg_personal_check_in_dialog_shape"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_60"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/alg_home_self_icon_hot"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/alg_common_250"
+            android:layout_height="@dimen/alg_common_40"
+            android:background="@color/alg_common_text_gray"
+            android:gravity="center"
+            android:text="签到成功"/>
+
+        <ImageView
+
+            android:layout_width="@dimen/alg_common_100"
+            android:layout_height="@dimen/alg_common_100"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:background="@mipmap/alg_debug_image_yanghe"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:text="恭喜获得5个利购券"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alg_common_25"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:text="连续每天签到会获取更多惊喜哟!"
+            android:textSize="@dimen/alg_common_sp_10"/>
+    </LinearLayout>
+</LinearLayout>

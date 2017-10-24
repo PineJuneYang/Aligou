@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_base_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alg_common_48"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:gravity="center"
+            android:padding="@dimen/alg_common_5"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/alg_common_icon_arrow_back"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/alg_common_50"
+            android:layout_marginLeft="@dimen/alg_common_25"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_30"
+                android:text="意见反馈"
+                android:textColor="@color/alg_common_bg_light"
+                android:textSize="@dimen/alg_common_sp_17"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_25"
+                android:text="如果你喜欢我们,请大方给我们表白,"
+                android:textColor="@color/alg_common_bg_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_5"
+                android:text="比如去App store 给个五星好评!"
+                android:textColor="@color/alg_common_bg_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_5"
+                android:text="如果你对爱利购hia不够满意,与其憋在心中"
+                android:textColor="@color/alg_common_bg_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_5"
+                android:text="还不如大声说出来,成为我们的军师"
+                android:textColor="@color/alg_common_bg_light"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:background="@android:color/transparent"
+        android:id="@+id/et_feedbook"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:hint="请写下你的宝贵意见"
+        android:paddingLeft="@dimen/alg_common_15"
+        android:paddingRight="@dimen/alg_common_15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/alg_common_15"
+        android:layout_marginTop="@dimen/alg_common_5"
+        android:text="请输入5-500字"/>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="@dimen/alg_common_150"
+        android:layout_height="@dimen/alg_common_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/alg_common_30"
+        android:layout_marginTop="@dimen/alg_common_40"
+        android:background="@drawable/alg_common_shape_button_bg_normal"
+        android:gravity="center"
+        android:text="提交"/>
+</LinearLayout>

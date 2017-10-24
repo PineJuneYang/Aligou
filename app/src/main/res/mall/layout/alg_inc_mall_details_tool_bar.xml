@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfbfb"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/alg_common_24"
+        >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/alg_home_commidity_detail_arrow"
+        android:padding="@dimen/alg_common_item_padding_top"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_details_goods_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:padding="@dimen/alg_common_item_padding_top"
+        android:text="商品"
+
+        android:textColor="@color/alg_common_bg_dark" />
+
+    <TextView
+        android:id="@+id/tv_goods_details_goods_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/alg_common_item_padding_top"
+        android:text="评论"
+        android:textColor="@color/alg_common_bg_dark" />
+
+    <TextView
+        android:id="@+id/tv_goods_details_goods_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/alg_common_item_padding_top"
+        android:text="详情"
+        android:textColor="@color/alg_common_bg_dark" />
+
+    <TextView
+        android:id="@+id/tv_goods_details_goods_recomment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/alg_common_item_padding_top"
+        android:text="推荐"
+        android:textColor="@color/alg_common_bg_dark" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/alg_common_sharebtnlarge"
+        android:padding="@dimen/alg_common_item_padding_top"
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_2"
+        android:background="#efefef"
+        />
+</LinearLayout>

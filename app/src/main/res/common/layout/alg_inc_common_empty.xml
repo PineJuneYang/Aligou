@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_mycollection_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_personal_nocollectionicon" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_30"
+        android:text="你还没有收藏任何商品"
+        android:textColor="@color/alg_common_divider_color_7c"
+        android:textSize="14sp" />
+
+    <TextView
+
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_25"
+        android:background="@drawable/alg_personal_shape_rectangle_white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/alg_common_8"
+        android:paddingLeft="@dimen/alg_common_24"
+        android:paddingRight="@dimen/alg_common_24"
+        android:paddingTop="@dimen/alg_common_8"
+        android:text="去看看"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

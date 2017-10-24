@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_refunds_aftersale_refunds_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginLeft="@dimen/alg_common_15"
+        android:gravity="center_vertical"
+        android:text="商品退货退款  退款成功"
+        android:textColor="#7c7c7c"
+        android:textSize="14sp"
+        />
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_52">
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_detail"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="@dimen/alg_common_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:gravity="center"
+            android:text="退款详情"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_refunds_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_18"
+            android:layout_toLeftOf="@id/tv_refunds_aftersale_detail"
+            android:text="88.50"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_5"
+            android:layout_toLeftOf="@id/tv_refunds_aftersale_refunds_money"
+            android:text="退款金额"
+            android:textColor="#7c7c7c"
+            android:textSize="12sp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="5dp"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_home_self_hot_image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alg_debug_image_yanghe_banner_01"/>
+</LinearLayout>

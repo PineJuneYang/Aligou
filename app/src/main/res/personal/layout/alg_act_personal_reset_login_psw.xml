@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_25"
+        android:background="@color/alg_common_bg_light"
+        android:paddingLeft="@dimen/alg_common_8"
+        android:paddingRight="@dimen/alg_common_8">
+
+        <TextView
+            android:id="@+id/tv_reset_login_psw_phone_number"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="手机号"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/et_reset_login_psw_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_reset_login_psw_phone_number"
+            android:background="@null"
+            android:hint="请输入新手机号"
+            android:inputType="number"
+            android:paddingLeft="@dimen/alg_common_20"
+            android:singleLine="true"
+            android:textColorHint="@color/alg_common_divider_hint_d1"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_25"
+        android:background="@color/alg_common_bg_light"
+        android:paddingLeft="@dimen/alg_common_8"
+        android:paddingRight="@dimen/alg_common_8">
+
+        <TextView
+            android:id="@+id/tv_reset_login_psw_verification_code"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="验证码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/et_reset_login_psw_input_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:layout_toRightOf="@id/tv_reset_login_psw_verification_code"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:paddingLeft="@dimen/alg_common_20"
+            android:singleLine="true"
+            android:textColorHint="@color/alg_common_divider_hint_d1"
+
+
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_reset_login_psw_get_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:gravity="center"
+            android:paddingTop="@dimen/alg_common_6"
+            android:paddingBottom="@dimen/alg_common_6"
+            android:paddingLeft="@dimen/alg_common_8"
+            android:paddingRight="@dimen/alg_common_8"
+            android:text="获取验证码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_25"
+        android:background="@color/alg_common_bg_light"
+        android:paddingLeft="@dimen/alg_common_8"
+
+        android:paddingRight="@dimen/alg_common_8">
+
+        <TextView
+            android:id="@+id/tv_reset_login_psw_new"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+
+            android:text="设置新密码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="@dimen/alg_common_sp_14"
+
+            />
+
+
+        <EditText
+            android:id="@+id/et_reset_login_psw_input_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_reset_login_psw_new"
+            android:background="@null"
+            android:hint="请输入6～15位的新密码"
+            android:paddingLeft="@dimen/alg_common_20"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/alg_common_divider_hint_d1"
+            android:textSize="14sp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_reset_login_psw_new_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword"
+            android:layout_marginRight="@dimen/alg_common_20"
+           android:background="@drawable/alg_personal_modify_psw_look_psw"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alg_common_divider_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_25"
+        android:background="@color/alg_common_bg_light"
+        android:paddingLeft="@dimen/alg_common_8"
+        android:paddingRight="@dimen/alg_common_8">
+
+        <TextView
+            android:id="@+id/tv_reset_login_psw_sure_new"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="确认新密码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="@dimen/alg_common_sp_14"
+            />
+
+
+        <EditText
+            android:id="@+id/et_reset_login_psw_input_sure_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_reset_login_psw_sure_new"
+            android:background="@null"
+            android:hint="请输入6～15位的新密码"
+            android:paddingLeft="@dimen/alg_common_20"
+            android:singleLine="true"
+            android:textColorHint="@color/alg_common_divider_hint_d1"
+            android:textSize="14sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_modify_login_psw_new_sure_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_20"
+            android:background="@drawable/alg_personal_modify_psw_look_psw"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alg_common_divider_color"/>
+
+    <TextView
+        android:id="@+id/tv_reset_login_psw_save"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alg_common_35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/alg_common_40"
+        android:background="@drawable/alg_personal_nextbtn"
+        android:gravity="center"
+        android:text="保 存"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>

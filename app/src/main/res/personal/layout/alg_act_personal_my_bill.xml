@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_personal_color_f2"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alg_common_60"
+        android:layout_marginBottom="@dimen/alg_common_15"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:background="@color/alg_personal_color_f2"
+        android:gravity="bottom"
+        android:text=" 我的资金"
+        android:textColor="#7c7c7c"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:layout_marginTop="@dimen/alg_common_22"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginRight="@dimen/alg_common_10"
+                android:text="累计消费总额:0元"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginLeft="@dimen/alg_common_12"
+                android:text="账户余额:0元"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:layout_marginTop="@dimen/alg_common_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:text="成功提现金额:0元"/>
+
+            <TextView
+                android:id="@+id/tv_4"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginLeft="@dimen/alg_common_12"
+                android:text="累计赠送利购券:0元"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:layout_marginTop="@dimen/alg_common_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginRight="@dimen/alg_common_10"
+                android:text="当前拥有赠送权:0个"/>
+
+            <TextView
+                android:id="@+id/tv_6"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginLeft="@dimen/alg_common_12"
+                android:text="历史累计赠送权:0个"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alg_common_20"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:layout_marginTop="@dimen/alg_common_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_7"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginRight="@dimen/alg_common_10"
+                android:text="冻结金额:0元"/>
+
+            <TextView
+                android:id="@+id/tv_8"
+                style="@style/alg_personal_my_bill_title_tv"
+                android:layout_marginLeft="@dimen/alg_common_12"
+                android:text="利积分余额:0元"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+    <!--下面按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_lable_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/alg_personal_my_bill_lable_tv"
+            android:text="查看记录"
+            android:textColor="#090909"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@mipmap/alg_common_icon_arrow_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_lable_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/alg_common_10">
+
+        <TextView
+            style="@style/alg_personal_my_bill_lable_tv"
+            android:text="我的订单"
+            android:textColor="#7c7c7c"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@mipmap/alg_common_icon_arrow_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lable_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/alg_personal_my_bill_lable_tv"
+            android:text="线上订单"
+            android:textColor="#090909"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@mipmap/alg_common_icon_arrow_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_lable_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:background="@color/alg_common_bg_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/alg_personal_my_bill_lable_tv"
+            android:text="线下订单"
+            android:textColor="#090909"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:background="@mipmap/alg_common_icon_arrow_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+</LinearLayout>

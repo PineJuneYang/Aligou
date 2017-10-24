@@ -1,0 +1,47 @@
+<resources>
+
+    <!--示例-->
+    <style name="alg_common_" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="alg_dialog">
+        <item name="android:windowIsFloating">true</item>//
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/alg_common_transparent_bg</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+
+
+    </style>
+
+    <!--友盟分享的dialog-->
+    <style name="alg_common_dialog_um_lin">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="alg_common_dialog_um_text">
+        <item name="android:layout_marginTop">@dimen/alg_common_10</item>
+        <item name="android:textColor">@color/alg_personal_color_3f</item>
+        <item name="android:textSize">@dimen/alg_common_sp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+    <declare-styleable name="AutoImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+</resources>

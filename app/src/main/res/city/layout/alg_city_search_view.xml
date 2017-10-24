@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_vertical"
+    android:background="#f4f6f9"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@mipmap/alg_home_icon_top_bar_search"
+        android:scaleType="center"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/alg_city_search_box_bg"
+        android:gravity="center"
+        android:paddingTop="@dimen/alg_common_5"
+        android:paddingBottom="@dimen/alg_common_5"
+        android:hint="@string/hint_search_box"
+        android:textColorHint="@color/alg_city_da"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/alg_common_10"
+        android:textColor="@color/alg_common_bg_dark"
+        android:layout_marginLeft="@dimen/alg_common_30"
+        android:layout_marginRight="@dimen/alg_common_30"
+        android:layout_marginBottom="@dimen/alg_common_10"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/iv_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/alg_cart_all_choose"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

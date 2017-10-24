@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_cart_93.5"
+        android:layout_marginBottom="@dimen/alg_common_24"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:layout_marginTop="@dimen/alg_common_24">
+
+        <ImageView
+            android:id="@+id/iv_refunds_aftersale_icon"
+            android:layout_width="@dimen/alg_cart_93.5"
+            android:layout_height="@dimen/alg_cart_93.5"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alg_debug_image_yanghe_banner_01"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_toRightOf="@id/iv_refunds_aftersale_icon"
+            android:maxLines="2"
+            android:text="打发斯蒂芬金阿斯顿九分裤"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_refunds_aftersale_brand"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_marginTop="@dimen/alg_common_10"
+            android:layout_toRightOf="@id/iv_refunds_aftersale_icon"
+            android:text="规格"
+            android:textColor="#7c7c7c"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_marginTop="@dimen/alg_common_10"
+            android:layout_toRightOf="@id/iv_refunds_aftersale_icon"
+            android:text="￥999.99"
+            android:textColor="#ee3929"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_refunds_aftersale_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:text="X 1"
+
+
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/alg_debug_marqueeview_bg"-->
+            <!--android:text="热议"-->
+            <!--android:textColor="#F14C00"-->
+            <!--android:textSize="12sp" />-->
+
+        <TextView
+            android:id="@+id/tv_quick_news_item_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="新闻条目1"
+            android:textColor="#000000"
+            android:textSize="@dimen/alg_common_text_discribe_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/alg_debug_marqueeview_bg"-->
+            <!--android:text="热议"-->
+            <!--android:textColor="#F14C00"-->
+            <!--android:textSize="12sp" />-->
+
+        <TextView
+            android:id="@+id/tv_quick_news_item_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="新闻条目2"
+            android:textColor="#000000"
+            android:textSize="@dimen/alg_common_text_discribe_small" />
+    </LinearLayout>
+</LinearLayout>

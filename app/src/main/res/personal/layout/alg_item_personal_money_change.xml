@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/alg_common_120"
+              android:layout_marginLeft="@dimen/alg_common_8"
+              android:layout_marginRight="@dimen/alg_common_8"
+              android:layout_marginTop="@dimen/alg_common_10"
+              android:background="@drawable/alg_personal_shape_rectangle_dc"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_30"
+        android:background="#e1e1e1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/alg_common_8"
+            android:text="类型"
+            android:textColor="#545454"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:gravity="right"
+            android:text="2017年8月29日19:19:34"
+            android:textColor="#545454"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+5.00"
+            android:textColor="#545454"
+            android:textSize="@dimen/alg_common_sp_12"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="349.00"
+            android:textColor="#545454"
+            android:textSize="@dimen/alg_common_sp_12"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0.00"
+            android:textColor="#545454"
+            android:textSize="@dimen/alg_common_sp_12"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="赠送发放"
+            android:textColor="#545454"
+            android:textSize="@dimen/alg_common_sp_12"/>
+    </LinearLayout>
+</LinearLayout>

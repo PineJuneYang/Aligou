@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/linear_item_search_history_goods"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_item_history_words_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="苹果"
+        android:layout_marginTop="@dimen/alg_common_15"
+        android:textSize="@dimen/alg_common_sp_12"
+        android:textColor="@color/alg_city_gray"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/alg_common_14"
+        android:background="@color/alg_common_divider_color_dc"
+        android:layout_marginRight="@dimen/alg_common_20"
+        android:layout_height="0.5dp"/>
+
+
+</LinearLayout>

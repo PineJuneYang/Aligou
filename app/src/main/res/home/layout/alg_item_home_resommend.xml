@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_commodity_zone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!--主推荐区-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--推荐1-->
+        <include
+            layout="@layout/alg_inc_home_recommend_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="@dimen/alg_common_divider_width"
+            android:layout_height="match_parent"
+            android:background="@color/alg_common_divider_color"/>
+
+        <!--右侧-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--右上：推荐2-->
+            <include
+                layout="@layout/alg_inc_home_recommend_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/alg_common_divider_width"
+                android:background="@color/alg_common_divider_color"/>
+
+            <!--右下-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--推荐3-->
+                <include
+                    layout="@layout/alg_inc_home_recommend_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="@dimen/alg_common_divider_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/alg_common_divider_color"/>
+
+                <!--推荐4-->
+                <include
+                    layout="@layout/alg_inc_home_recommend_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_divider_width"
+        android:background="@color/alg_common_divider_color"/>
+
+    <!--次推荐区-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_commodity_second_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

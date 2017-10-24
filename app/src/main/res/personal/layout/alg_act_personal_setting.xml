@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/alg_personal_color_f2"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_20"
+            android:background="@android:color/transparent"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_account_safe"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="账户与安全"/>
+
+            <ImageView
+                style="@style/alg_personal_setting_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_bank_card"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="我的银行卡"/>
+
+            <ImageView
+                style="@style/alg_personal_setting_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_share_app"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="分享App"/>
+
+            <ImageView
+                style="@style/alg_personal_setting_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_app_update"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="版本更新"/>
+
+            <ImageView
+                style="@style/alg_personal_setting_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_clear_cache"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="清理缓存"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                style="@style/alg_personal_setting_img"/>
+
+            <TextView
+                android:id="@+id/tv_cache"
+                style="@style/alg_personal_setting_text"
+                android:layout_marginRight="@dimen/alg_common_15"
+                android:layout_toLeftOf="@id/iv_arrow"
+                android:text="暂无缓存"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_abort_alg"
+            style="@style/alg_personal_setting_relativelayout">
+
+            <TextView
+                style="@style/alg_personal_setting_text"
+                android:text="关于爱利购"/>
+
+            <ImageView
+                style="@style/alg_personal_setting_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/alg_common_60"
+        android:layout_marginRight="@dimen/alg_common_60"
+        android:layout_marginTop="@dimen/alg_common_60"
+        android:background="@drawable/alg_personal_btn"
+        android:gravity="center"
+        android:text="退出当前账号"
+        android:textColor="#ffffff"
+        android:textSize="14sp"/>
+
+</LinearLayout>

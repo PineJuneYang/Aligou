@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_30"
+        android:layout_marginTop="@dimen/alg_common_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="商店名称"/>
+
+        <EditText
+            android:id="@+id/et_union_name"
+            android:padding="@dimen/alg_common_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alg_common_shape_corner"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:hint="请输入商店名称"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_30"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行业分类"/>
+
+        <TextView
+            android:id="@+id/tv_industry"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="@dimen/alg_common_20"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:background="@drawable/alg_common_shape_corner"
+            android:gravity="center"
+            android:text="请选择行业"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_30"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择地区"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_select_province"
+                android:layout_width="@dimen/alg_common_80"
+                android:layout_height="@dimen/alg_common_20"
+                android:layout_marginLeft="@dimen/alg_common_15"
+                android:background="@drawable/alg_common_shape_corner"
+                android:gravity="center"
+                android:text="省"/>
+
+            <TextView
+                android:id="@+id/tv_select_city"
+                android:layout_width="@dimen/alg_common_80"
+                android:layout_height="@dimen/alg_common_20"
+                android:layout_marginLeft="@dimen/alg_common_15"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:background="@drawable/alg_common_shape_corner"
+                android:gravity="center"
+                android:text="市"/>
+
+            <TextView
+                android:id="@+id/tv_select_county"
+                android:layout_width="@dimen/alg_common_80"
+                android:layout_height="@dimen/alg_common_20"
+                android:layout_marginLeft="@dimen/alg_common_15"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:background="@drawable/alg_common_shape_corner"
+                android:gravity="center"
+                android:text="区"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/alg_common_50"
+        android:layout_gravity="center"
+        android:id="@+id/btn_sure"
+        android:background="@color/alg_common_bg"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_width="@dimen/alg_common_80"
+        android:layout_height="@dimen/alg_common_30"/>
+</LinearLayout>

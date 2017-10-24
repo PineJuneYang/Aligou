@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <TextView
+        android:id="@+id/tv_athdraw_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginTop="@dimen/alg_common_22"
+        android:text="提现金额必须大于100元"
+        android:textColor="@color/alg_common_divider_color_7c"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_60"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginRight="@dimen/alg_common_15"
+        android:layout_marginTop="@dimen/alg_common_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="中国银行"
+            android:textColor="@color/alg_common_text_dark"
+            android:textSize="14sp"/>
+
+        <ImageView
+            style="@style/alg_personal_my_info_arrow_img"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_overage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginTop="@dimen/alg_common_45"
+        android:text="可提现余额:8993.12元"
+        android:textColor="@color/alg_common_divider_color_7c"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:layout_marginTop="@dimen/alg_common_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="¥"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="26sp"/>
+
+        <EditText
+            android:id="@+id/et_athdraw_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:background="@android:color/transparent"
+            android:hint="请输入提现金额"
+            android:inputType="phone|number"
+            android:singleLine="true"
+            android:textColorHint="@color/alg_common_divider_hint_d1"
+            android:textSize="@dimen/alg_common_sp_13"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_40"
+        android:layout_marginBottom="@dimen/alg_common_60"
+        android:layout_marginLeft="@dimen/alg_common_30"
+        android:layout_marginRight="@dimen/alg_common_30"
+        android:layout_marginTop="@dimen/alg_common_45"
+        android:background="@drawable/alg_personal_wthdraw_btn"
+        android:gravity="center"
+        android:text="确定提现"
+        android:textColor="@color/alg_common_bg_light"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginRight="@dimen/alg_common_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
+            android:text="温馨提示"
+            android:textColor="#7c7c7c"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
+            android:text=" 1.为保证提现成功，目前仅支持提现到储蓄卡，且保证银行卡号码、真实姓名、开户行信息正确；"
+            android:textColor="#7c7c7c"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
+            android:text="2.提现金额必须大于100元，每周仅限1次，每次提现平台将收取千分之五手续费；"
+            android:textColor="#7c7c7c"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
+            android:text="3.如果您忘记了自己的开户行名称，可以通过拨打银行的客服电话详细咨询。特别提醒：请尽量要求银行客服人员提供您完整的开户行名称。附银行客服电话：中国工商银行 95588  中国建设银行 95533  中国农业银行 95599  招商银行 95555  交通银行95559"
+            android:textColor="#7c7c7c"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+</LinearLayout>

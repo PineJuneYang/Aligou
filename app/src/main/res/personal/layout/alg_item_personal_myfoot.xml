@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/alg_personal_color_f2"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:background="@color/alg_personal_color_f2"
+        android:paddingLeft="@dimen/alg_common_12"
+        android:paddingTop="@dimen/alg_common_24"
+        android:text="时间"
+        android:textColor="#373737"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:background="@color/alg_common_bg_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_22"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/alg_common_8"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alg_cart_all_choose" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_goods"
+            android:layout_width="@dimen/alg_cart_93.5"
+            android:layout_height="@dimen/alg_cart_93.5"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:scaleType="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/alg_common_8">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="商品名称"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_goods_now_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="现价"
+                    android:textColor="#eb3b32"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/alg_common_5"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="原价:"
+                    android:textColor="#b4b4b4"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/alg_common_5"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_goods_old_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/alg_common_60"
+                        android:text="原价"
+                        android:textColor="#b4b4b4"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+              
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_3"
+        android:background="#f2f2f2"
+        android:layout_marginTop="@dimen/alg_common_22"
+        />
+</LinearLayout>

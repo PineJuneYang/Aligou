@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/alg_inc_common_title"></include>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:background="@color/alg_common_bg_light"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/alg_news_tab_indoctor"
+        app:tabMinWidth="@dimen/alg_common_2"
+        app:tabSelectedTextColor="@color/alg_common_bg"
+        app:tabTextColor="@color/alg_common_bg_dark"></android.support.design.widget.TabLayout>
+<include layout="@layout/alg_inc_line"></include>
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/alg_common_5"
+        android:id="@+id/viewPager_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

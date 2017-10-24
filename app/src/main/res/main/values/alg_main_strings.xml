@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--底部tab标题-->
+    <string name="alg_main_tab_title_home">爱利购</string>
+    <string name="alg_main_tab_title_classification">分类</string>
+    <string name="alg_main_tab_title_supper">超级购</string>
+    <string name="alg_main_tab_title_news">资讯</string>
+    <string name="alg_main_tab_title_union">联盟商家</string>
+    <string name="alg_main_tab_title_cart">购物车</string>
+    <string name="alg_main_tab_title_personal">个人中心</string>
+</resources>

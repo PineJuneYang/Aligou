@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/alg_common_bg_light"
+        android:textSize="13sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_margin"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:text="时间:"/>
+
+        <TextView
+            android:id="@+id/tv_time_begin"
+            style="@style/alg_home_ligou_change_time_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:text="至"
+            android:textColor="#505050"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_time_end"
+            style="@style/alg_home_ligou_change_time_text"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_8"
+            android:layout_marginRight="@dimen/alg_common_margin"
+            android:background="@drawable/alg_personal_quire_btn"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:background="@color/alg_personal_color_f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

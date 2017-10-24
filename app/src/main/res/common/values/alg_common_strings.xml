@@ -1,0 +1,6 @@
+<resources>
+    <string name="alg_app_name">爱利购</string>
+    <string name="alg_app_vcode_success">获取验证码成功</string>
+    <string name="alg_app_vcode_failure">获取验证码失败</string>
+    <string name="alg_app_vcode_verify_failure">手机或验证码错误</string>
+</resources>

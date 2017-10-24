@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_pop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alg_common_transparent_bg"
+        android:orientation="vertical"/>
+    <!--网页-->
+    <WebView
+        android:id="@+id/web_home_notice"
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"/>
+    <!--关闭按钮-->
+    <ImageView
+        android:id="@+id/iv_home_pop_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_above="@id/web_home_notice"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/web_home_notice"
+        android:src="@mipmap/alg_common_icon_close"/>
+</RelativeLayout>

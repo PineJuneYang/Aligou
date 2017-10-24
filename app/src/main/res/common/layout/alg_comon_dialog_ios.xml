@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_marginTop="@dimen/alg_common_10"
+    android:background="@drawable/alg_common_shape_corner"
+    android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/alg_common_10"
+    android:layout_marginRight="@dimen/alg_common_10"
+    android:layout_height="110dp">
+
+    <TextView
+        android:id="@+id/tv_ios_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:layout_marginRight="@dimen/alg_common_5"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text="确认要退出该账户吗?"
+        android:textSize="@dimen/alg_common_sp_18"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_1"
+       android:layout_gravity="center"
+        android:background="@color/alg_city_gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_ios_dialog_postive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:layout_marginRight="@dimen/alg_common_5"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textSize="@dimen/alg_common_sp_18" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/alg_common_shape_corner"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/alg_common_10"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:layout_marginRight="@dimen/alg_common_10"
+        android:layout_marginBottom="@dimen/alg_common_10"
+        android:layout_height="@dimen/alg_common_40">
+
+        <TextView
+            android:id="@+id/tv_ios_dialog_negative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/alg_common_sp_18"
+            android:layout_marginRight="@dimen/alg_common_5"
+            android:layout_marginLeft="@dimen/alg_common_5"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

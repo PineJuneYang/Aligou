@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_light"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_personal_210">
+
+        <LinearLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/alg_persoanl_ligou_overage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ligou_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/alg_common_24"
+                android:gravity="center_vertical"
+                android:text="2122"
+                android:textColor="#ffffff"
+                android:textSize="18.5sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ligou_count"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/alg_common_28"
+                android:text="利购券余额"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_50"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/alg_common_8"
+                    android:layout_marginRight="@dimen/alg_common_7"
+                    android:text="时间:"
+                    android:textColor="#505050"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_time_begin"
+                    style="@style/alg_home_ligou_change_time_text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/alg_common_8"
+                    android:layout_marginRight="@dimen/alg_common_8"
+                    android:text="至"/>
+
+                <TextView
+                    android:id="@+id/tv_time_end"
+                    style="@style/alg_home_ligou_change_time_text"/>
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="@dimen/alg_personal_58"
+                    android:layout_height="@dimen/alg_common_25"
+                    android:layout_marginLeft="@dimen/alg_common_7"
+                    android:layout_marginRight="@dimen/alg_common_7"
+                    android:background="@drawable/alg_personal_quire_btn"
+                    android:gravity="center"
+                    android:text="查 询"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_40"
+        android:paddingLeft="@dimen/alg_common_8"
+        android:background="@color/alg_personal_color_f2"
+        android:gravity="center_vertical"
+        android:text="说明:实际到账金额=提现金额-手续费"
+        android:textColor="@color/alg_common_divider_color_7c"
+        android:textSize="@dimen/alg_common_sp_12"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:background="@color/alg_common_bg_light">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="获取时间"
+            android:textColor="#181818"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数量"
+            android:textColor="#181818"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="类型"
+            android:textColor="#181818"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="#181818"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_common_bg_light"
+              android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_57"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_140"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_wecaht"
+                style="@style/alg_common_dialog_um_lin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alg_debug_icon_wechat_70_70"/>
+
+                <TextView
+                    style="@style/alg_common_dialog_um_text"
+                    android:text="微信"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_qq"
+                style="@style/alg_common_dialog_um_lin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alg_debug_icon_qq_70_70"/>
+
+                <TextView
+                    style="@style/alg_common_dialog_um_text"
+                    android:text="QQ"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_wecaht_friends"
+                style="@style/alg_common_dialog_um_lin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alg_debug_icon_wechatfri_70_70"/>
+
+                <TextView
+                    style="@style/alg_common_dialog_um_text"
+                    android:text="朋友圈"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_qq_zone"
+                style="@style/alg_common_dialog_um_lin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alg_debug_icon_qzone_70_70"/>
+
+                <TextView
+                    style="@style/alg_common_dialog_um_text"
+                    android:text="QQ空间"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_weibo"
+                style="@style/alg_common_dialog_um_lin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alg_debug_icon_weibo_70_70"/>
+
+                <TextView
+                    style="@style/alg_common_dialog_um_text"
+                    android:text="微博"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alg_city_white"
+    android:orientation="vertical"
+
+    android:layout_marginTop="@dimen/alg_common_10"
+    android:layout_marginLeft="@dimen/alg_common_5"
+    android:layout_marginRight="@dimen/alg_common_5"
+    >
+
+    <ImageView
+        android:id="@+id/iv_home_boutique_image"
+        style="@style/alg_home_boutique_175_175_img"
+        android:layout_height="@dimen/alg_common_175"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/alg_common_6"
+        android:src="@mipmap/alg_debug_image_yanghe" />
+
+    <TextView
+        android:id="@+id/tv_home_boutique_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:lines="2"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:text="商品名称简写"
+        android:textColor="#3e3d3d"
+        android:textSize="@dimen/alg_common_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_home_boutique_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxLines="3"
+        android:text="价格"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/alg_common_sp_14" />
+
+</LinearLayout>

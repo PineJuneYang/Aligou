@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/alg_common_10"
+    android:layout_marginRight="@dimen/alg_common_5"
+    android:layout_marginLeft="@dimen/alg_common_5"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <com.alg.ailigou.common.widget.AutoImageView
+        android:id="@+id/iv_week_new_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ratio="1"
+        android:src="@drawable/alg_debug_image_commodity"
+
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tv_week_new_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称"
+        android:layout_marginLeft="@dimen/alg_common_4"
+        android:layout_marginTop="@dimen/alg_common_8"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09089"
+        android:layout_marginLeft="@dimen/alg_common_4"
+        android:layout_marginTop="@dimen/alg_common_12"
+        android:textColor="@color/alg_common_color_red"
+
+
+        />
+
+</LinearLayout>
+

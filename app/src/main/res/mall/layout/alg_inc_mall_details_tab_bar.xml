@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_goods_details_tab_ask"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/alg_mall_customerservice"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/iv_goods_details_tab_fav"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/alg_mall_collection2"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_goods_details_tab_add_cart"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:text="加入购物车"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/alg_mall_cart"
+        android:paddingTop="@dimen/alg_common_item_padding_top"
+        android:paddingBottom="@dimen/alg_common_item_padding_top"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_goods_details_tab_buy"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:text="立即购买"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/alg_mall_buynow"
+        android:paddingTop="@dimen/alg_common_item_padding_top"
+        android:paddingBottom="@dimen/alg_common_item_padding_top"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

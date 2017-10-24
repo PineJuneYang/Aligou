@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/alg_common_22"
+    android:paddingRight="@dimen/alg_common_22"
+    android:paddingTop="@dimen/alg_common_14"
+    android:paddingBottom="@dimen/alg_common_14"
+    android:background="@drawable/alg_city_shape_rectangle_grey"
+   >
+    <TextView
+        android:id="@+id/tv_hot_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+
+        android:gravity="center"
+
+
+        android:textSize="@dimen/alg_common_sp_14"
+        android:textColor="#484848"/>
+</RelativeLayout>

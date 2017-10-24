@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:text="收货人:"
+            style="@style/alg_personal_edit_address_tv"
+
+            />
+
+        <EditText
+            android:id="@+id/et_edit_address_receive_name"
+            android:text="张某某"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginTop="@dimen/alg_common_20"
+            style="@style/alg_personal_edit_address_et"
+
+            android:textSize="@dimen/alg_common_sp_13"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/alg_personal_edit_address_view"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:text="手机号码:"
+            style="@style/alg_personal_edit_address_tv"
+
+            />
+
+        <EditText
+            android:id="@+id/et_edit_address_phone_number"
+            android:text="15012345678"
+            android:layout_height="wrap_content"
+            style="@style/alg_personal_edit_address_et"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/alg_personal_edit_address_view"
+        />
+
+<RelativeLayout
+    android:layout_marginTop="@dimen/alg_common_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:text="所在地区:"
+        style="@style/alg_personal_edit_address_tv"
+        android:id="@+id/tv_edit_address_area"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+
+    <ImageView
+        android:layout_width="@dimen/alg_common_20"
+        android:layout_height="@dimen/alg_common_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/alg_common_15"
+        android:src="@mipmap/alg_common_icon_arrow_right"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_edit_address_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="四川省"
+        android:layout_toRightOf="@id/tv_edit_address_area"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:layout_marginLeft="@dimen/alg_common_15"
+        android:textColor="@color/alg_common_bg_dark"
+        android:textSize="@dimen/alg_common_sp_13"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_edit_address_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成都市"
+        android:textColor="@color/alg_common_bg_dark"
+        android:layout_marginLeft="@dimen/alg_common_15"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_edit_address_province"
+        android:textSize="@dimen/alg_common_sp_13"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_edit_address_district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金牛区"
+        android:textColor="@color/alg_common_bg_dark"
+        android:layout_marginLeft="@dimen/alg_common_15"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_edit_address_city"
+        android:textSize="@dimen/alg_common_sp_13"
+        />
+
+
+</RelativeLayout>
+
+    <View
+        style="@style/alg_personal_edit_address_view"
+        android:layout_marginTop="@dimen/alg_common_10"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_edit_address_detail_address"
+            android:text="详细地址:"
+            style="@style/alg_personal_edit_address_tv"
+
+            />
+
+        <EditText
+
+            android:text="浦南路100弄100号"
+            android:layout_height="wrap_content"
+            style="@style/alg_personal_edit_address_et"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/tv_edit_address_default"
+        android:text="设为默认地址"
+        android:drawableLeft="@drawable/alg_cart_all_choose"
+        android:drawablePadding="@dimen/alg_common_8"
+        style="@style/alg_personal_edit_address_tv"
+        android:layout_marginTop="@dimen/alg_common_50"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_edit_address_delete"
+        android:text="删除地址"
+        style="@style/alg_personal_edit_address_tv"
+        android:layout_marginLeft="@dimen/alg_common_40"
+        />
+
+
+</LinearLayout>

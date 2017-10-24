@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_personal_color_f2"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:id="@+id/relative_change_phone_number"
+        android:layout_width="match_parent"
+        android:background="@color/alg_common_bg_light"
+        android:layout_height="@dimen/alg_common_50">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="修改手机号"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_account_security_phonenumber_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_16"
+            android:background="@drawable/alg_common_into_arrow"
+            />
+
+        <TextView
+            android:id="@+id/tv_telnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:layout_toLeftOf="@id/iv_account_security_phonenumber_next"
+            android:text=""
+            android:textColor="#7c7c7c"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alg_common_divider_color"/>
+
+    <RelativeLayout
+        android:background="@color/alg_common_bg_light"
+        android:id="@+id/relative_change_login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="修改登录密码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_account_security_login_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_16"
+            android:background="@drawable/alg_common_into_arrow"
+
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alg_common_divider_color"/>
+
+    <RelativeLayout
+        android:background="@color/alg_common_bg_light"
+        android:id="@+id/relative_change_pay_psw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alg_common_12"
+            android:text="修改支付密码"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_account_security_pay_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_16"
+            android:background="@drawable/alg_common_into_arrow"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alg_common_divider_color"/>
+
+</LinearLayout>

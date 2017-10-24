@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/alg_common_bg_light"
+              android:orientation="horizontal">
+    <!--爱利购快讯标题图-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/alg_home_image_ailigou_news"/>
+    <!--爱利购快讯滚动新闻-->
+    <ViewFlipper
+        android:id="@+id/vf_home_quick_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/alg_home_anim_marquee_in"
+        android:outAnimation="@anim/alg_home_anim_marquee_out"
+        android:paddingLeft="1dp"/>
+</LinearLayout>

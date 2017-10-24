@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_common_bg_light"
+              android:orientation="vertical">
+    <!--  上部 灰色带头像部分 这里面的padding 是为了增大点击范围-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alg_personal_header_bg"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_title_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/alg_common_5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_personal_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/alg_common_5"
+                        android:paddingRight="@dimen/alg_common_8"
+                        android:paddingTop="@dimen/alg_common_5"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/alg_personal_setting"
+                            android:textColor="@color/alg_common_bg_light"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_personal_sport_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/alg_common_10"
+                        android:paddingRight="@dimen/alg_common_10"
+                        android:paddingTop="@dimen/alg_common_10"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alg_personal_set"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_title_right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_user_icon"
+                        android:layout_width="@dimen/alg_cart_67"
+                        android:layout_height="@dimen/alg_cart_67"
+                        android:layout_marginLeft="@dimen/alg_common_20"
+                        android:background="@drawable/alg_personal_head_portrait"/>
+
+                    <TextView
+                        android:id="@+id/tv_is_has_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/alg_common_12"
+                        android:text="@string/alg_personal_login_register"
+                        android:textColor="@color/alg_common_bg_light"
+                        android:textSize="@dimen/alg_common_sp_14"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/alg_common_12"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alg_personal_head_portrait_arrow"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--  利购券  收藏,足迹部分 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_90"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/ll_cheap_ticket"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_cheap_ticket_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#232323"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/alg_common_12"
+                            android:text="@string/alg_personal_cheap_ticket"
+                            android:textColor="#393939"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_collect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_collect_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#232323"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/alg_common_12"
+                            android:text="@string/alg_personal_my_collect"
+                            android:textColor="#393939"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_foot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_foot_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#232323"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/alg_common_12"
+                            android:text="@string/alg_personal_my_foot"
+                            android:textColor="#393939"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_10"
+                    android:background="@color/alg_personal_color_f2"/>
+
+                <!-- 我的订单 -->
+                <LinearLayout
+                    android:id="@+id/ll_my_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_40"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/alg_common_15"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alg_personal_icon_mylist"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/alg_common_8"
+                            android:text="@string/alg_personal_my_order"
+                            android:textColor="#030303"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/alg_common_12"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/alg_common_5"
+                        android:paddingTop="@dimen/alg_common_5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_look_all_orders"
+                            android:textColor="#929292"
+                            android:textSize="11sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_mylist_arrow"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/alg_frg_personal_divider_tv"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_80"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_wait_payment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wait_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_pendingpayment"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_wait_payment"
+                            android:textColor="@color/alg_personal_color_50"
+                            android:textSize="@dimen/alg_common_sp_11"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wait_ship"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wait_ship"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_shipmentpending"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_wait_ship"
+                            android:textColor="@color/alg_personal_color_50"
+                            android:textSize="@dimen/alg_common_sp_11"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wait_receipt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wait_receipt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_goods_to_bereceived"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_wait_receipt"
+                            android:textColor="@color/alg_personal_color_50"
+                            android:textSize="@dimen/alg_common_sp_11"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wait_assess"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wait_assess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_pendingevaluation"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_wait_assess"
+                            android:textColor="@color/alg_personal_color_50"
+                            android:textSize="@dimen/alg_common_sp_11"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_after_sale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_after_sale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/alg_common_10"
+                            android:background="@drawable/alg_personal_returned_goods"/>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_after_sale"
+                            android:textColor="@color/alg_personal_color_50"
+                            android:textSize="@dimen/alg_common_sp_11"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alg_common_10"
+                    android:background="@color/alg_personal_color_f2"/>
+                <!-- 代付款  待发货等-->
+                <!-- 下面几个按钮 意见反馈等  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/alg_common_12"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_bill"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_42"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizonta_llist_mylist"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_my_bill"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_receipt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_delivery_address"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_receipt_address"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_member_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_level"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员等级"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_delivery_address"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="每日签到"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_enter_platform"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_settled_merchant"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_enter_platform"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_use_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_instructions"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用说明"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_feedbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_feedback"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_feedbook"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_customer_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alg_personal_44"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_tel"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alg_personal_customer_service"
+                            android:textColor="@color/alg_common_text_dark"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/alg_common_12"
+                            android:background="@drawable/alg_personal_horizontallist_arrow_same"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/alg_frg_personal_divider_tv"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

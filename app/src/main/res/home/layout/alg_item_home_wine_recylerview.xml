@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+    android:background="@color/alg_city_white"
+              android:layout_height="@dimen/alg_common_95">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_marginTop="@dimen/alg_common_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_75"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<resources>
+
+    <!--示例-->
+    <style name="alg_styles_" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="alg_home_alg_choice_title_img">
+        <item name="android:background">@color/alg_common_bg_dark</item>
+        <item name="android:layout_width">@dimen/alg_common_50</item>
+        <item name="android:layout_height">@dimen/alg_common_40</item>
+    </style>
+
+    <style name="alg_home_alg_choice_title_text">
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+    </style>
+
+    <style name="alg_home_alg_choice_recommend_img">
+        <item name="android:background">@color/alg_cart_price_accounts</item>
+        <item name="android:layout_width">@dimen/alg_common_60</item>
+        <item name="android:layout_height">@dimen/alg_common_40</item>
+    </style>
+    <!--奢侈品-->
+    <style name="alg_home_alg_luxury_title_img">
+        <item name="android:layout_marginLeft">@dimen/alg_common_10</item>
+        <item name="android:background">@color/alg_common_bg_dark</item>
+        <item name="android:layout_width">@dimen/alg_common_50</item>
+        <item name="android:layout_height">@dimen/alg_common_40</item>
+    </style>
+
+    <style name="alg_home_alg_luxury_title_text_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="alg_home_alg_luxury_title_text_bottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="alg_home_alg_luxury_title_line">
+        <item name="android:layout_marginTop">@dimen/alg_common_5</item>
+        <item name="android:layout_marginBottom">@dimen/alg_common_5</item>
+        <item name="android:background">@color/alg_common_divider_color</item>
+        <item name="android:layout_width">@dimen/alg_common_40</item>
+        <item name="android:layout_height">@dimen/alg_common_divider_width</item>
+    </style>
+
+    <style name="alg_home_alg_luxury_brand_img">
+        <item name="android:background">@color/alg_common_bg_dark</item>
+        <item name="android:layout_width">@dimen/alg_common_40</item>
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+    </style>
+
+    <!--爆款推荐-->
+    <style name="alg_home_alg_hot_recommend_head_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:textColor">@color/alg_common_bg_dark</item>
+    </style>
+
+    <style name="alg_home_alg_hot_recommend_img">
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_width">@dimen/alg_common_110</item>
+        <item name="android:layout_height">@dimen/alg_common_110</item>
+    </style>
+
+    <!--自营标题  图片和文字-->
+    <style name="alg_home_self_img">
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="alg_home_self_head_text">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/alg_common_10</item>
+        <item name="android:paddingBottom">@dimen/alg_common_10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:textColor">@color/alg_common_bg_dark</item>
+    </style>
+    <!--利购券详情-->
+    <style name="alg_home_ligou_change_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+        <item name="android:textColor">@color/alg_common_bg_light</item>
+    </style>
+    <!--利购券兑换记录 记录时间的框的样式-->
+    <style name="alg_home_ligou_change_time_text">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/alg_personal_shape_rectangle_dc</item>
+        <item name="android:drawableRight">@drawable/alg_personal_show_time</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/alg_common_25</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:textColor">#7e7e7e</item>
+    </style>
+    <!--利购券兑换记录 记录时间的75dp框的样式-->
+    <style name="alg_home_ligou_change_time_text_75">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/alg_personal_shape_rectangle_dc</item>
+        <item name="android:drawableRight">@drawable/alg_personal_show_time</item>
+        <item name="android:layout_width">@dimen/alg_common_75</item>
+        <item name="android:layout_height">@dimen/alg_common_25</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:textColor">#7e7e7e</item>
+    </style>
+
+
+    <!--限时抢购-->
+    <style name="alg_home_limit_buy_88_77_img">
+        <item name="android:layout_width">@dimen/alg_common_88</item>
+        <item name="android:layout_height">@dimen/alg_common_77</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    
+    <style name="alg_home_boutique_175_175_img">
+        <item name="android:layout_width">@dimen/alg_common_175</item>
+        <item name="android:height">@dimen/alg_common_175</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+
+
+    <style name="alg_home_bill_detail_tv">
+        <item name="android:layout_width">@dimen/alg_common_80</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginTop">@dimen/alg_common_20</item>
+
+    </style>
+    
+</resources>

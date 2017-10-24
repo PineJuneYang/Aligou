@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        style="@style/alg_city_LetterIndexTextViewStyle"
+        android:layout_marginTop="@dimen/alg_common_8"
+        android:text="@string/hot_city"/>
+
+    <com.alg.ailigou.selectcity.view.WrapHeightGridView
+        android:id="@+id/gridview_hot_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/alg_common_8"
+        android:paddingRight="@dimen/alg_common_35"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/alg_common_8"
+        android:verticalSpacing="@dimen/alg_common_10"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none"/>
+</LinearLayout>

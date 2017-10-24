@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alg.ailigou.library.widget.banner.BannerViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:id="@+id/bannerview"
+                                                       android:layout_width="match_parent"
+                                                       android:background="@color/alg_cart_bg"
+                                                       android:layout_height="@dimen/alg_common_200">
+
+</com.alg.ailigou.library.widget.banner.BannerViewPager>

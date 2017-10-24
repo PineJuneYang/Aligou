@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="@dimen/alg_common_item_padding_top">
+
+    <ImageView
+        android:id="@+id/iv_home_half_price_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alg_debug_image_yanghe"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/alg_common_item_padding_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_home_half_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/alg_common_text_dark"
+            android:text="商品名称简写"/>
+
+        <TextView
+            android:id="@+id/tv_home_half_price_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alg_common_price_text_color"
+            android:textSize="@dimen/alg_common_text_discribe_small"
+            android:text="价格"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

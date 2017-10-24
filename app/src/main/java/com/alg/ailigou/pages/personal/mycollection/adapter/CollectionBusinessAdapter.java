@@ -1,0 +1,49 @@
+package com.alg.ailigou.pages.personal.mycollection.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.alg.ailigou.R;
+import com.alg.ailigou.common.model.UnionModel;
+import com.alg.ailigou.pages.cart.adapter.BaseHeadAndFootAdapter;
+import com.alg.ailigou.pages.cart.adapter.OnItemClickListener;
+import com.alg.ailigou.pages.cart.holder.MyBaseViewHolder;
+import com.alg.ailigou.pages.union.entrance.holder.UniconHolder;
+import com.bumptech.glide.Glide;
+
+import java.util.List;
+
+/**
+ * Created by 玖泞
+ * on 2017/8/8
+ * 此类或接口用于
+ */
+
+public class CollectionBusinessAdapter extends BaseHeadAndFootAdapter {
+    private List<UnionModel> datas;
+
+    public CollectionBusinessAdapter(List datas, Context context) {
+        super(datas, context);
+        this.datas = datas;
+    }
+
+    @Override
+    protected MyBaseViewHolder onNormalViewHolder(ViewGroup parent, int type, OnItemClickListener listener) {
+        View view = LayoutInflater.from(mContext).inflate(R.layout.alg_item_home_business, parent, false);
+        return new UniconHolder(view, getListener());
+    }
+
+    @Override
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+        if (holder instanceof UniconHolder) {
+            UniconHolder vh = (UniconHolder) holder;
+            Glide.with(mContext).load(datas.get(position).imgUrl).into(vh.getIvHomeBusinessImage());
+            vh.getTvHomeBusinessAddress().setText(datas.get(position).address);
+            vh.getTvHomeBusinessContactsName().setText(datas.get(position).person);
+            vh.getTvHomeBusinessContactsPhone().setText(datas.get(position).telNumber);
+        }
+    }
+}

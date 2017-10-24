@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_personal_color_f2"
+              android:orientation="vertical">
+
+    <include layout="@layout/alg_inc_common_title"></include>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/alg_personal_register_desc_tv"
+        android:layout_marginLeft="@dimen/alg_common_20"
+        android:layout_marginTop="@dimen/alg_common_75"
+        android:text="我们将发送验证码至你的手机"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_60"
+        android:background="@color/alg_common_bg_light"
+        android:paddingLeft="@dimen/alg_common_20"
+        android:layout_marginTop="@dimen/alg_common_15">
+
+        <TextView
+            android:id="@+id/tv_register_phone_number"
+            style="@style/alg_personal_setting_text"
+            android:layout_centerVertical="true"
+            android:text="手机号"/>
+
+
+        <EditText
+            android:id="@+id/et_register_input"
+            style="@style/alg_personal_register_common_edit"
+            android:layout_toRightOf="@id/tv_register_phone_number"
+            android:hint="请输入新手机号"
+            android:inputType="number"
+            android:maxLength="20"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_divider_width"
+        android:background="@color/alg_common_divider_color"/>
+    <TextView
+        android:id="@+id/tv_register_next"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alg_common_35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/alg_common_75"
+        android:background="@drawable/alg_personal_nextbtn"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        />
+</LinearLayout>

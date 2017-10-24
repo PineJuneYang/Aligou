@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alg_cart_93.5">93.5dp</dimen>
+    <dimen name="alg_cart_88">88dp</dimen>
+    <dimen name="alg_cart_115.5">115.5dp</dimen>
+    <dimen name="alg_cart_131">131dp</dimen>
+    <dimen name="alg_cart_105">105dp</dimen>
+    <dimen name="alg_cart_110">110dp</dimen>
+    <dimen name="alg_cart_45">45dp</dimen>
+    <dimen name="alg_cart_67">67dp</dimen>
+
+
+</resources>

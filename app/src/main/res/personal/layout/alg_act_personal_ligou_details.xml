@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_personal_color_f2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alg_personal_details_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_ligou_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_90"
+            android:shadowRadius="4"
+            android:text="666.66"
+            android:textColor="#ffffff"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_gift_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/alg_common_18"
+            android:paddingLeft="@dimen/alg_common_12"
+            android:text="当前拥有赠送权: 16个"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_withdraw"
+            style="@style/alg_personal_ligou_details_rl">
+
+            <TextView
+                style="@style/alg_personal_my_info_text"
+                android:text="提现"
+                />
+
+            <ImageView
+                style="@style/alg_personal_my_info_arrow_img"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_gift_notes"
+            style="@style/alg_personal_ligou_details_rl">
+
+            <TextView
+                style="@style/alg_personal_my_info_text"
+                android:text="利购券赠送记录"
+                />
+
+            <ImageView
+                style="@style/alg_personal_my_info_arrow_img"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_ligou_exchange"
+            style="@style/alg_personal_ligou_details_rl">
+
+            <TextView
+                style="@style/alg_personal_my_info_text"
+                android:text="利购券兑换"
+                />
+
+            <ImageView
+                style="@style/alg_personal_my_info_arrow_img"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_ligou_exchange_rule"
+            style="@style/alg_personal_ligou_details_rl">
+
+            <TextView
+                style="@style/alg_personal_my_info_text"
+                android:text="兑换规则"
+                />
+
+            <ImageView
+                style="@style/alg_personal_my_info_arrow_img"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:background="@color/alg_common_divider_color"/>
+    </LinearLayout>
+</LinearLayout>

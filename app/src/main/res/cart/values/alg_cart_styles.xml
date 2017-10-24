@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- 示例-->
+    <style name="alg_cart_style_1" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+</resources>

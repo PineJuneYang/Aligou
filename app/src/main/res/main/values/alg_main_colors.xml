@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主界面底部tab背景颜色-->
+    <color name="alg_main_tab_bg">#F7F7F7</color>
+    <!--主界面底部tab文字未选中颜色-->
+    <color name="alg_main_tab_text_color_mormal">#7b7979</color>
+    <!--主界面底部tab文字选中颜色-->
+    <color name="alg_main_tab_text_color_selected">#E81F1F</color>
+</resources>

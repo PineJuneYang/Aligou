@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_base_top_bar_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alg_common_status_navigation"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/alg_common_2"
+              android:paddingTop="@dimen/alg_common_2">
+
+
+
+    <ImageView
+        android:id="@+id/iv_base_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+        android:padding="@dimen/alg_common_5"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:background="@mipmap/alg_common_icon_arrow_back"
+
+        />
+
+
+    <!--搜索-->
+    <RelativeLayout
+        android:id="@+id/ll_base_search_bar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/alg_common_29"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/alg_common_8"
+        android:layout_marginRight="@dimen/alg_common_10"
+
+        android:background="@drawable/alg_union_shp_bg_round">
+        <ImageView
+
+            android:id="@+id/iv_base_top_bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_100"
+            android:layout_centerVertical="true"
+
+            android:src="@mipmap/alg_home_icon_top_bar_search" />
+
+
+
+        <TextView
+            android:id="@+id/tv_base_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入关键词搜索"
+            android:textColor="@color/alg_city_white"
+            android:layout_toRightOf="@id/iv_base_top_bar_search"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/alg_common_sp_14"
+
+            android:layout_marginLeft="@dimen/alg_common_14"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_base_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="@dimen/alg_common_sp_14"
+        android:textColor="@color/alg_city_white"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/alg_common_14"
+        />
+
+
+</LinearLayout>

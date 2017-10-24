@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/ll_base_search_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alg_common_status_navigation"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/alg_common_9"
+    android:paddingTop="@dimen/alg_common_9">
+
+
+    <ImageView
+        android:id="@+id/iv_base_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/alg_common_10"
+        android:src="@mipmap/alg_common_icon_arrow_back"
+        android:padding="@dimen/alg_common_10"
+
+        />
+
+
+    <!--搜索-->
+    <com.alg.ailigou.common.widget.SearchView
+
+        android:id="@+id/sv_base_searchview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/alg_common_12"
+        android:layout_marginRight="@dimen/alg_common_14"
+        android:layout_weight="1"
+        android:background="@drawable/alg_union_shp_bg_round"
+        android:imeOptions="actionSearch"
+        android:paddingBottom="@dimen/alg_common_8"
+        android:paddingLeft="@dimen/alg_common_10"
+        android:paddingTop="@dimen/alg_common_8"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/alg_common_sp_14"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_base_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/alg_common_14"
+        android:text="设置"
+        android:textColor="@color/alg_city_white"
+        android:textSize="@dimen/alg_common_sp_14" />
+
+
+</LinearLayout>

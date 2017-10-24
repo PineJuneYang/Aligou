@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alg_common_bg"
+              android:orientation="vertical">
+    <!--工具条-->
+    <com.alg.ailigou.common.widget.CustomToolBar
+        android:id="@+id/ctb_mall_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alg_common_status_height"
+        android:background="@color/alg_common_bg"/>
+
+    <com.alg.ailigou.common.widget.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alg_common_bg_light"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--轮播广告 滚动-->
+            <com.alg.ailigou.library.widget.banner.BannerViewPager
+                android:id="@+id/bvp_mall_banner_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"/>
+            <!--分类-->
+            <com.alg.ailigou.common.widget.CustomRecyclerView
+                android:id="@+id/rv_marking_classic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/alg_common_item_padding_top"
+                android:paddingTop="5dp"/>
+            <!--轮播广告 不滚动-->
+            <ImageView
+                android:id="@+id/iv_mall_banner_fix"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"/>
+            <!--热销品牌-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/alg_common_item_padding_top"
+                android:text="热销品牌"
+                android:textColor="@color/alg_common_text_dark"
+                android:textSize="@dimen/alg_common_text_title"/>
+            <!--热销品牌-->
+            <com.alg.ailigou.common.widget.CustomRecyclerView
+                android:id="@+id/rv_hot_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--人气推荐-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_item_padding_top"
+                android:gravity="center"
+                android:padding="@dimen/alg_common_item_padding_top"
+                android:text="人气推荐"
+                android:textColor="@color/alg_common_text_dark"
+                android:textSize="@dimen/alg_common_text_title"/>
+            <!--人气推荐-->
+            <com.alg.ailigou.common.widget.CustomRecyclerView
+                android:id="@+id/rv_popularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </com.alg.ailigou.common.widget.CustomScrollView>
+</LinearLayout>

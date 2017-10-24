@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/alg_common_bg_light"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_my_order_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_cart_93.5"
+        android:layout_marginBottom="@dimen/alg_common_24"
+        android:layout_marginTop="@dimen/alg_common_24">
+
+        <ImageView
+            android:id="@+id/iv_my_order_commondity_icon"
+            android:layout_width="@dimen/alg_cart_93.5"
+            android:layout_height="@dimen/alg_cart_93.5"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/alg_common_15"
+            android:src="@drawable/alg_logo"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_my_order_commondity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginRight="@dimen/alg_common_24"
+            android:layout_toLeftOf="@+id/tv_my_order_commondity_now_price"
+            android:layout_toRightOf="@id/iv_my_order_commondity_icon"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="8sp"
+            android:maxLines="2"
+            android:text="XXXXXXXXX"
+            android:textColor="#000000"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_my_order_commondity_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ee3929"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:textSize="@dimen/alg_common_sp_14"
+            android:text="现价"
+            />
+
+        <TextView
+            android:id="@+id/tv_my_order_commondity_pre_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_my_order_commondity_now_price"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:layout_marginTop="@dimen/alg_common_15"
+            android:text="原价"
+            android:textColor="#b4b4b4"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_my_order_commondity_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_order_commondity_name"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginTop="@dimen/alg_common_25"
+            android:layout_toRightOf="@id/iv_my_order_commondity_icon"
+            android:text="规格"
+            android:textColor="#7c7c7c"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_my_order_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/alg_common_22"
+            android:layout_marginRight="@dimen/alg_common_15"
+            android:text="x 1"
+            android:textColor="#b4b4b4"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_40"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_item_my_order_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:text="(包含运费:￥10.00)"
+            android:textColor="#7c7c7c"
+            android:textSize="@dimen/alg_common_sp_13"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:layout_toLeftOf="@id/tv_item_my_order_fare"
+            android:text="￥89.88"
+            android:textColor="@color/alg_common_text_dark"
+            android:textSize="@dimen/alg_common_sp_14"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:layout_toLeftOf="@id/tv_item_my_order_total_price"
+            android:text="总计:"
+            android:textColor="#7c7c7c"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_commondity_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:layout_toLeftOf="@id/tv_item_my_order_total"
+            android:text="共1件商品"
+            android:textColor="#545454"
+            android:textSize="14sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/alg_inc_line"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_45"
+        >
+
+        <TextView
+            android:id="@+id/tv_item_my_order_funds"
+            android:layout_width="@dimen/alg_common_75"
+            android:layout_height="@dimen/alg_common_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_8"
+            android:background="@drawable/alg_personal_refefunds_red_bg"
+            android:gravity="center"
+            android:text="退款"
+            android:textColor="#fd0000"
+            android:textSize="14sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_item_my_order_cancle"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="@dimen/alg_common_25"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:layout_toLeftOf="@id/tv_item_my_order_funds"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="@color/alg_common_bg_dark"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_view_logistics"
+            android:layout_width="@dimen/alg_common_80"
+            android:layout_height="@dimen/alg_common_25"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:layout_toLeftOf="@id/tv_item_my_order_cancle"
+            android:background="@drawable/alg_common_shape_rectangle_transparent"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textColor="@color/alg_common_bg_dark"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

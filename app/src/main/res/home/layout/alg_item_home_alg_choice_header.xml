@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_250">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/alg_cart_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alg_common_150"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:layout_marginRight="@dimen/alg_common_10"
+            android:background="@color/alg_cart_hot_recommend_text"
+            android:orientation="vertical">
+            <!--上面4个 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/alg_common_10"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_goods1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods1"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:id="@+id/tv_title1"
+                        android:text="经典红酒"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods2"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="香醇白酒"
+                        android:id="@+id/tv_title2"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods3"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="厨房用具"
+                        android:id="@+id/tv_title3"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods4"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="户外运动"
+                        android:id="@+id/tv_title4"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--下面4个 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/alg_common_10"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_goods5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods5"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="数码家电"
+                        android:id="@+id/tv_title5"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods6"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="豪华轿车"
+                        android:id="@+id/tv_title6"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods7"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="文具玩具"
+                        android:id="@+id/tv_title7"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_goods8"
+                        style="@style/alg_home_alg_choice_title_img"/>
+
+                    <TextView
+                        android:text="香车宝马"
+                        android:id="@+id/tv_title8"
+                        style="@style/alg_home_alg_choice_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--精品推荐 -->
+    <include layout="@layout/alg_inc_common_recommend"></include>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/alg_common_5"
+        android:layout_marginRight="@dimen/alg_common_5"
+        android:paddingBottom="@dimen/alg_common_10"
+        android:paddingTop="@dimen/alg_common_10">
+
+        <LinearLayout
+            android:id="@+id/ll_choice_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cheap_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精品男鞋"/>
+
+            <TextView
+                android:id="@+id/tv_cheap_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(满500减50)"/>
+
+            <ImageView
+                android:id="@+id/iv_choice_goods1"
+                style="@style/alg_home_alg_choice_recommend_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_choice_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cheap_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精品男鞋"/>
+
+            <TextView
+                android:id="@+id/tv_cheap_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(满500减50)"/>
+
+            <ImageView
+                android:id="@+id/iv_choice_goods2"
+                style="@style/alg_home_alg_choice_recommend_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_choice_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cheap_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精品男鞋"/>
+
+            <TextView
+                android:id="@+id/tv_cheap_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(满500减50)"/>
+
+            <ImageView
+                android:id="@+id/iv_choice_goods3"
+                style="@style/alg_home_alg_choice_recommend_img"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 样式如下         ===为您推荐====                   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alg_common_50"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:layout_marginLeft="@dimen/alg_common_30"
+            android:layout_marginRight="@dimen/alg_common_20"
+            android:layout_weight="1"
+            android:background="@color/alg_common_text_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/alg_common_12"
+            android:text="@string/alg_home_big_name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alg_common_divider_width"
+            android:layout_marginLeft="@dimen/alg_common_20"
+            android:layout_marginRight="@dimen/alg_common_30"
+            android:layout_weight="1"
+            android:background="@color/alg_common_text_gray"/>
+    </LinearLayout>
+
+</LinearLayout>

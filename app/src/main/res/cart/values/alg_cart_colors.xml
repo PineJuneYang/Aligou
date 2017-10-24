@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alg_cart_bg">#3F51B5</color>
+    <color name="alg_cart_price_text">#eb3b32</color>
+    <color name="alg_cart_hot_recommend_text">#dd1f16</color>
+    <color name="alg_cart_price_accounts">#da0b00</color>
+    <color name="alg_cart_dc">#dcdcdc</color>
+
+</resources>
+

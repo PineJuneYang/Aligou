@@ -1,0 +1,271 @@
+<resources>
+
+    <!--设置里面每行的父布局的样式-->
+    <style name="alg_personal_setting_relativelayout">
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_20</item>
+        <item name="android:layout_marginRight">@dimen/alg_common_20</item>
+    </style>
+    <!--设置里面每行的textView  譬如 账户与安全-->
+    <style name="alg_personal_setting_text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/alg_common_bg_dark</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--设置里面每行的imageView  括号箭头-->
+    <style name="alg_personal_setting_img">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/alg_common_into_arrow</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--银行卡绑定的style-->
+    <style name="alg_personal_add_bank_card_info_ll">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_12</item>
+    </style>
+
+    <style name="alg_personal_add_bank_card_info_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="alg_personal_add_bank_card_info_edit">
+        <item name="android:layout_marginLeft">@dimen/alg_common_10</item>
+        <item name="android:textColor">@color/alg_common_text_dark</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColorHint">@color/alg_common_divider_hint_d1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="alg_personal_add_bank_card_info_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alg_common_divider_width</item>
+        <item name="android:background">@color/alg_common_divider_color</item>
+    </style>
+    <!--我的资料-->
+    <style name="alg_personal_my_info_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alg_common_divider_width</item>
+        <item name="android:background">@color/alg_common_divider_color</item>
+    </style>
+
+    <style name="alg_personal_my_info_rl">
+        <item name="android:layout_marginRight">@dimen/alg_common_15</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/alg_common_60</item>
+    </style>
+    <!--头像用户名性别 -->
+    <style name="alg_personal_my_info_text">
+        <item name="android:textColor">@color/alg_common_bg_dark</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="alg_personal_my_info_arrow_img">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/alg_common_into_arrow</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!-- 利购券详情  -->
+    <style name="alg_personal_ligou_details_rl">
+        <item name="android:layout_marginRight">@dimen/alg_common_15</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+    </style>
+
+    <!--注册页面的textview的描述信息-->
+    <style name="alg_personal_register_desc_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/alg_common_divider_color_7c</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+    </style>
+
+
+    <!--注册页面常规的edittext-->
+    <style name="alg_personal_register_common_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/alg_common_20</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/alg_common_divider_hint_d1</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+    </style>
+
+
+    <!--注册页面的常规relativeLayout-->
+    <style name="alg_personal_register_common_rl">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alg_common_40</item>
+
+    </style>
+
+
+    <!--用户界面常规的点击的textview  例如 下一步,保存-->
+    <style name="alg_personal_common_next_tv">
+        <item name="android:layout_width">@dimen/alg_common_200</item>
+        <item name="android:layout_height">@dimen/alg_common_35</item>
+        <item name="android:textColor">@color/alg_common_bg_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/alg_personal_nextbtn</item>
+
+
+    </style>
+
+    <style name="alg_personal_common_eye_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/alg_common_25</item>
+    </style>
+    <!--++++++++++++++++我的账单++++++++++++++++++++++-->
+    <style name="alg_personal_my_bill_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/alg_common_6</item>
+        <item name="android:paddingBottom">@dimen/alg_common_6</item>
+        <item name="android:paddingLeft">@dimen/alg_common_7</item>
+        <item name="android:paddingRight">@dimen/alg_common_7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/alg_common_sp_12</item>
+        <item name="android:background">@drawable/alg_personal_shape_bg_dc</item>
+    </style>
+
+    <style name="alg_personal_my_bill_lable_tv">
+        <item name="android:layout_marginLeft">@dimen/alg_common_12</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+    </style>
+
+
+    <!--编辑地址的分割线-->
+    <style name="alg_personal_edit_address_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginTop">@dimen/alg_common_20</item>
+        <item name="android:background">#88888888</item>
+    </style>
+
+
+    <!--编辑地址的textview-->
+    <style name="alg_personal_edit_address_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginTop">@dimen/alg_common_20</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_20</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+
+    </style>
+
+
+    <!--编辑地址的界面EditText-->
+    <style name="alg_personal_edit_address_et">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_10</item>
+        <item name="android:layout_marginTop">@dimen/alg_common_20</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+
+    </style>
+
+
+    <style name="alg_item_personal_offline_order_ll">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/alg_common_15</item>
+
+
+    </style>
+
+
+    <style name="alg_item_personal_offline_order_tv_left">
+        <item name="android:layout_width">@dimen/alg_common_60</item>
+        <item name="android:textSize">@dimen/alg_common_sp_12</item>
+        <item name="android:textColor"> #7c7c7c</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_20</item>
+
+    </style>
+
+    <style name="alg_item_personal_offline_order_tv_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor"> #202020</item>
+        <item name="android:textSize">@dimen/alg_common_sp_12</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_25</item>
+    </style>
+
+
+    <!-- 退货详情的左边文字的样式-->
+    <style name="alg_item_personal_return_goods_details_tv_left">
+        <item name="android:textColor">#7c7c7c</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_15</item>
+    </style>
+    <!-- 退货详情的右边文字的样式-->
+    <style name="alg_item_personal_return_goods_details_tv_right">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/alg_common_bg_dark</item>
+        <item name="android:textSize">@dimen/alg_common_sp_14</item>
+        <item name="android:layout_marginLeft">@dimen/alg_common_25</item>
+    </style>
+    <!-- 退货详情的水平的样式-->
+    <style name="alg_item_personal_return_goods_details_ll">
+        <item name="android:textSize">@dimen/alg_common_sp_13</item>
+        <item name="android:textColor">#7c7c7c</item>
+        <item name="android:background">@color/alg_common_bg_light</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alg_common_50</item>
+    </style>
+    <!--个人中心分割线的style-->
+    <style name="alg_frg_personal_divider_tv">
+        <item name="android:background">@color/alg_common_divider_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="popup_left_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/alg_personal_popup_sign_in_enter</item>
+        <item name="android:windowExitAnimation">@anim/alg_personal_popup_sign_in_exit</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/alg_home_search_bg" />
+    <corners android:topLeftRadius="@dimen/alg_common_5"
+             android:topRightRadius="@dimen/alg_common_5"
+             android:bottomRightRadius="@dimen/alg_common_5"
+             android:bottomLeftRadius="@dimen/alg_common_5"/>
+
+</shape>

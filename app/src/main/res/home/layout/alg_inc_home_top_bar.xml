@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_home_top_bar_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alg_common_status_navigation"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/alg_common_2"
+              android:paddingTop="@dimen/alg_common_2">
+
+    <!--定位-->
+    <TextView
+        android:id="@+id/tv_home_top_bar_location_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="上海"
+        android:textColor="@color/alg_common_text_light"
+        android:textSize="@dimen/alg_common_sp_14"/>
+
+    <ImageView
+        android:id="@+id/iv_home_location_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:src="@mipmap/alg_common_icon_arrow_down"/>
+    <!--搜索-->
+    <RelativeLayout
+        android:id="@+id/ll_search_bar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/alg_common_29"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/alg_common_6"
+        android:layout_marginRight="@dimen/alg_common_25"
+        android:background="@drawable/alg_main_shp_bg_round_no_border">
+        <ImageView
+
+            android:id="@+id/iv_home_top_bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/alg_common_80"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            android:src="@mipmap/alg_home_icon_top_bar_search" />
+
+
+
+
+    </RelativeLayout>
+    <!--活动通知-->
+    <ImageView
+        android:id="@+id/iv_home_scan"
+        android:layout_width="@dimen/alg_common_29"
+        android:layout_height="@dimen/alg_common_29"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginRight="@dimen/alg_common_12"
+        android:src="@mipmap/alg_home_icon_scan"/>
+
+</LinearLayout>

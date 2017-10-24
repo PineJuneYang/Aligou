@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/alg_inc_common_title"></include>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="基本信息"
+           android:paddingLeft="@dimen/alg_common_20"
+           android:paddingTop="@dimen/alg_common_20"
+            android:background="@color/alg_city_gray"
+            android:paddingBottom="@dimen/alg_common_5"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:text="订单号 :"
+                style="@style/alg_home_bill_detail_tv"
+
+                />
+
+               <TextView
+                   android:id="@+id/tv_home_bill_detail_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/alg_common_20"
+                   android:text="12354566485"
+                   android:layout_marginLeft="@dimen/alg_common_10"
+                   />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alg_common_divider_color_dc"
+            android:layout_marginTop="@dimen/alg_common_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="商家名称 :"
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alg_common_divider_color_dc"
+            android:layout_marginTop="@dimen/alg_common_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:text="商家电话 :"
+
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_business_telphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alg_common_divider_color_dc"
+            android:layout_marginTop="@dimen/alg_common_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:text="会员账号 :"
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_member_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alg_common_divider_color_dc"
+            android:layout_marginTop="@dimen/alg_common_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:text="会员电话 :"
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_member_telphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alg_common_divider_color_dc"
+            android:layout_marginTop="@dimen/alg_common_20"
+            />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名 :"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:layout_marginLeft="@dimen/alg_common_34"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_bill_detail_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:text="12354566485"
+            android:layout_marginLeft="@dimen/alg_common_10"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/alg_common_20"
+
+            >
+            <TextView
+
+                android:text="数  量 :"
+                style="@style/alg_home_bill_detail_tv"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/alg_common_shape_tv_grey"
+
+                android:layout_marginLeft="@dimen/alg_common_20"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_home_bill_detail_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alg_cart_delete_black"
+                    android:padding="@dimen/alg_common_10"
+                    android:layout_marginLeft="@dimen/alg_common_10"
+                    />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/alg_city_gray"
+                    android:layout_marginLeft="@dimen/alg_common_10"
+                    />
+
+                <EditText
+                    android:id="@+id/et_home_bill_detail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="2"
+                    android:layout_marginTop="@dimen/alg_common_10"
+                    android:layout_marginLeft="@dimen/alg_common_20"
+                    android:layout_marginBottom="@dimen/alg_common_10"
+                    android:background="@android:color/transparent"
+                    />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/alg_city_gray"
+                    android:layout_marginLeft="@dimen/alg_common_20"
+                    />
+                <ImageView
+                    android:id="@+id/iv_home_bill_detail_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alg_cart_add"
+                    android:padding="@dimen/alg_common_10"
+                    android:layout_marginLeft="@dimen/alg_common_10"
+                    android:layout_marginRight="@dimen/alg_common_10"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:text="总金额 :"
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="服务费 :"
+                style="@style/alg_home_bill_detail_tv"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_bill_detail_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alg_common_20"
+                android:text="12354566485"
+                android:layout_marginLeft="@dimen/alg_common_10"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_home_bill_detail_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交订单"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/alg_common_20"
+            android:paddingTop="@dimen/alg_common_10"
+            android:paddingBottom="@dimen/alg_common_10"
+            />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
